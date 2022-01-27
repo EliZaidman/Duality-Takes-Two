@@ -23,13 +23,6 @@ public class LightCheck : MonoBehaviour
     public List<GameObject> lightMeshList = new List<GameObject>();
     public List<GameObject> darkMeshList = new List<GameObject>();
 
-    // Update is called once per frame
-    void Update()
-    {
-
-
-
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -37,20 +30,17 @@ public class LightCheck : MonoBehaviour
 
         if (other.gameObject.tag == "Darkness")
         {
-            lightMeshList.Add(other.gameObject.GetComponent<GameObject>());
+            darkMeshList.Add(other.gameObject.GetComponent<GameObject>());
             Sync();
         }
         if (other.gameObject.tag == "Light")
         {
             //Debug.Log("Inside Light");
-            darkMeshList.Add(other.gameObject.GetComponent<GameObject>());
+            lightMeshList.Add(other.gameObject.GetComponent<GameObject>());
             Sync();
         }
     }
-    void OnTriggerStay(Collider other)
-    {
-
-    }
+    
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Darkness")
@@ -60,7 +50,6 @@ public class LightCheck : MonoBehaviour
         }
         if (other.gameObject.tag == "Light")
         {
-            //Debug.Log("Inside Light");
             lightMeshList.Remove(other.gameObject.GetComponent<GameObject>());
             Sync();
         }
