@@ -12,6 +12,7 @@ public class LightCheck : MonoBehaviour
         darkness,
         DoubleDarkness,
     }
+    public LightConditions lightConditions;
 
     public bool hittingLight;
     public GameObject lightCheck;
