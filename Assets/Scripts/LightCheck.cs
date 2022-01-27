@@ -5,7 +5,7 @@ using UnityEngine;
 public class LightCheck : MonoBehaviour
 {
 
-    enum LightConditions
+    public enum LightConditions
     {
         light,
         doubleLight,
@@ -18,46 +18,88 @@ public class LightCheck : MonoBehaviour
     public int maxInten;
     public int minInten;
 
-    
-    public List<GameObject> meshList = new List<GameObject>();
+
+    public List<GameObject> lightMeshList = new List<GameObject>();
+    public List<GameObject> darkMeshList = new List<GameObject>();
 
     // Update is called once per frame
     void Update()
     {
-        if (meshList.Count >= 2)
-        {
-            Debug.Log("Darkness And Light");
-        }
+
+
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
+
+
         if (other.gameObject.tag == "Darkness")
         {
-            meshList.Add(other.gameObject.GetComponent<GameObject>());
+            lightMeshList.Add(other.gameObject.GetComponent<GameObject>());
+            Sync();
         }
         if (other.gameObject.tag == "Light")
         {
             //Debug.Log("Inside Light");
-            meshList.Add(other.gameObject.GetComponent<GameObject>());
+            darkMeshList.Add(other.gameObject.GetComponent<GameObject>());
+            Sync();
         }
     }
     void OnTriggerStay(Collider other)
     {
 
     }
-
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Darkness")
         {
-            meshList.Remove(other.gameObject.GetComponent<GameObject>());
+            darkMeshList.Remove(other.gameObject.GetComponent<GameObject>());
+            Sync();
         }
         if (other.gameObject.tag == "Light")
         {
             //Debug.Log("Inside Light");
-            meshList.Remove(other.gameObject.GetComponent<GameObject>());
+            lightMeshList.Remove(other.gameObject.GetComponent<GameObject>());
+            Sync();
         }
     }
 
+    private void Sync()
+    {
+        //LIGHT
+        if (lightMeshList.Count >= 2 && darkMeshList.Count <= 0)
+        {
+            Debug.Log("EXTRA LIGHTTTT");
+        }
+
+        if (lightMeshList.Count == 1 && darkMeshList.Count <= 0)
+        {
+            Debug.Log("Inside Light");
+        }
+        //LIGHT
+
+        //DARKNESS AND LIGHT
+        if (darkMeshList.Count == 1 && darkMeshList.Count == 1)
+        {
+            Debug.Log("Inside Darkness AND Light");
+        }
+
+        if (darkMeshList.Count >= 2 && darkMeshList.Count >= 2)
+        {
+            Debug.Log("EXTRA DARKNESSS AND EXTRA LIGHTTTT");
+        }
+        //DARKNESS AND LIGHT
+
+        //DARKNESS
+        if (darkMeshList.Count >= 2 && lightMeshList.Count <= 0)
+        {
+            Debug.Log("EXTRA DARKNESSS");
+        }
+
+        if (darkMeshList.Count == 1 && lightMeshList.Count == 0)
+        {
+            Debug.Log("Inside Darkness");
+        }
+    }
 }
