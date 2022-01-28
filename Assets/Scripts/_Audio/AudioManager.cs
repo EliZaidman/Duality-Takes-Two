@@ -21,10 +21,10 @@ public class AudioManager : MonoBehaviour
         PlayBGM();
     }
 
-    public void PlayOneShot(SFXClass sfx)
+    public void PlayOneShot(string sfxName)
     {
-        sfxListIndex = sfx.sfxID;
-        RuntimeManager.PlayOneShot(SfxList[sfxListIndex].path);
+        var sfxToPlay = SfxList.Find(name => name.sfxName == sfxName);
+        RuntimeManager.PlayOneShot(sfxToPlay.path);
     } 
     public void PlayBGM() => bgmEvent.start();
     public void StopBGM()
