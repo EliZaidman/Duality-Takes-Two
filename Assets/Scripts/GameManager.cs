@@ -41,7 +41,9 @@ public class GameManager : MonoBehaviour
 
     public List<GameObject> targetPosition;
 
-    public Canvas mainMenu;
+    public GameObject WinWindow;
+    public GameObject LoseWindow;
+    private bool _hasWon = false;
     #endregion
 
     #region Unity Callbacks
@@ -58,13 +60,17 @@ public class GameManager : MonoBehaviour
     {
         //_levelText.text = Level.ToString("0");
 
-        if (!IsWaveOngoing)
+        if (IsWaveOngoing)
         {
-            Timer -= Time.deltaTime;
+            Timer += Time.deltaTime;
             //_countDown.text = Timer.ToString("0");
 
-            if (Timer <= 0)
-                IsWaveOngoing = true;
+            if (Timer >= 180 && !_hasWon)
+            {
+                _hasWon = true;
+                Win();
+
+            }
         }
 
 
@@ -79,12 +85,20 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         IsWaveOngoing = true;
-        mainMenu.enabled = false;
     }
 
     public void LostGame()
     {
-        Debug.Log("HIT PLAYER");
+        LoseWindow.SetActive(true);
+    }
+
+    public void StartSpawning()
+    {
+        _isWaveOngoing = true;
+    }
+    private void Win()
+    {
+        WinWindow.SetActive(true);
     }
 
     #endregion

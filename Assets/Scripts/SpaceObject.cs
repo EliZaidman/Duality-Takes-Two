@@ -12,35 +12,35 @@ public class SpaceObject : MonoBehaviour
     {
         switch (lightCheck.lightConditions)
         {
-            case (LightCheck.LightConditions.darkness):
+            case LightCheck.LightConditions.darkness:
                 darknessObj.SetActive(true);
                 doubleDarknessObj.SetActive(false);
                 lightObj.SetActive(false);
                 doubleLightObj.SetActive(false);
                 defaultGameObj.SetActive(false);
                 break;
-            case (LightCheck.LightConditions.DoubleDarkness):
+            case LightCheck.LightConditions.DoubleDarkness:
                 darknessObj.SetActive(false);
                 doubleDarknessObj.SetActive(true);
                 lightObj.SetActive(false);
                 doubleLightObj.SetActive(false);
                 defaultGameObj.SetActive(false);
                 break;
-            case (LightCheck.LightConditions.doubleLight):
+            case LightCheck.LightConditions.doubleLight:
                 darknessObj.SetActive(false);
                 doubleDarknessObj.SetActive(false);
                 lightObj.SetActive(false);
                 doubleLightObj.SetActive(true);
                 defaultGameObj.SetActive(false);
                 break;
-            case (LightCheck.LightConditions.light):
+            case LightCheck.LightConditions.light:
                 darknessObj.SetActive(false);
                 doubleDarknessObj.SetActive(false);
                 lightObj.SetActive(true);
                 doubleLightObj.SetActive(false);
                 defaultGameObj.SetActive(false);
                 break;
-            default:
+            case LightCheck.LightConditions.Default:
                 darknessObj.SetActive(false);
                 doubleDarknessObj.SetActive(false);
                 lightObj.SetActive(false);
