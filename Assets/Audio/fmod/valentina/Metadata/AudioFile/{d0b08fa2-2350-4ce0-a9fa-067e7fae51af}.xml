@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{d0b08fa2-2350-4ce0-a9fa-067e7fae51af}">
+		<property name="assetPath">
+			<value>meteorDark.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.6038321995464857</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3095a65f-4039-444d-a669-03e213ad0964}</destination>
+		</relationship>
+	</object>
+</objects>

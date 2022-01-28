@@ -13,6 +13,8 @@ public class AudioManager : MonoBehaviour
     [EventRef]public string bgmRef;
     [SerializeField] private int bgmIntensity;
     [SerializeField] private int bgmIntensityRate;
+    private EventDescription bgmDescription;
+    PLAYBACK_STATE playbackState;
 
     public static AudioManager instance;
     private void Awake()
@@ -21,11 +23,22 @@ public class AudioManager : MonoBehaviour
         instance = this;
         bgmEvent = RuntimeManager.CreateInstance(bgmRef);
     }
+    PLAYBACK_STATE PlaybackState(EventInstance instance)
+    {
+        FMOD.Studio.PLAYBACK_STATE pS;
+        instance.getPlaybackState(out pS);
+        return pS;
+    }
+
     private void Start()
     {
+        bgmIntensity = 0;
+        if (PlaybackState(bgmEvent) == PLAYBACK_STATE.PLAYING)
+        {
+            StopBGM();
+        }
         PlayBGM();
         InvokeRepeating("IncreaseIntensity", 0 ,bgmIntensityRate);
-        PlayOneShot(SfxList[0].path, LIGHT_DARK_PARAM_NAME, 0, transform.position); //1,2   1,2
     }
     private void Update()
     {
@@ -43,9 +56,13 @@ public class AudioManager : MonoBehaviour
     {
         var sfxToPlay = SfxList.Find(name => name.sfxName == sfxName);
         RuntimeManager.PlayOneShot(sfxToPlay.path);
-    } 
+    }
 
-    public void PlayBGM() => bgmEvent.start();
+    public void PlayBGM()
+    {
+        if (PlaybackState(bgmEvent) != PLAYBACK_STATE.PLAYING) bgmEvent.start();
+    }
+    
     public void StopBGM()
     {
         bgmEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);

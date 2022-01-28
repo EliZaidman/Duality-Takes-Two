@@ -44,18 +44,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SfxList:
-  - sfxName: Sattelite
+  - sfxName: Satallite
     sfxID: 0
-    path: 
-  - sfxName: collisionSattelite
+    path: event:/sfx/satallite
+  - sfxName: colSatallite
     sfxID: 0
-    path: 
-  - sfxName: Asteroid
+    path: event:/sfx/colSatallite
+  - sfxName: Meteor
     sfxID: 0
-    path: 
-  - sfxName: collisionAsteroid
+    path: event:/sfx/meteor
+  - sfxName: colMeteor
     sfxID: 0
-    path: 
-  bgmRef: event:/bgm
+    path: event:/sfx/colMeteor
+  - sfxName: colMeteor
+    sfxID: 0
+    path: event:/sfx/colMeteor
+  - sfxName: Chicken
+    sfxID: 0
+    path: event:/sfx/chicken
+  - sfxName: colChicken
+    sfxID: 0
+    path: event:/sfx/colChicken
+  bgmRef: event:/ost/bgm
   bgmIntensity: 0
   bgmIntensityRate: 0

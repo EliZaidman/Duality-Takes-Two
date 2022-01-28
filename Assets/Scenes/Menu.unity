@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &2155249 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2066016012661925684, guid: e601ed11c355a194e82e11f61b09ec25, type: 3}
+  m_PrefabInstance: {fileID: 2066016013158154241}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ef97cef9c8b4cd45a4ce14d79ff69ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &24832466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,6 +1255,18 @@ MonoBehaviour:
       - m_Target: {fileID: 662816632}
         m_TargetAssemblyTypeName: LoadGame, Assembly-CSharp
         m_MethodName: LoadGameClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2155249}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: StopBGM
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4879,6 +4902,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2066016012661925684, guid: e601ed11c355a194e82e11f61b09ec25, type: 3}
+      propertyPath: bgmRef
+      value: event:/ost/ambiance
+      objectReference: {fileID: 0}
     - target: {fileID: 2066016012661925685, guid: e601ed11c355a194e82e11f61b09ec25, type: 3}
       propertyPath: m_Name
       value: AudioManager
