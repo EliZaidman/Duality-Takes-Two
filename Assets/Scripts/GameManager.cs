@@ -29,6 +29,13 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private bool _isWaveOngoing = false;
+
+    
+    
+
+    public float timeRemaining = 180;
+    public bool timerIsRunning = false;
+    public TextMeshProUGUI timeText;
     #endregion
 
     #region Properties
@@ -37,7 +44,8 @@ public class GameManager : MonoBehaviour
 
     #region Public Fields
     public int TargetsRemaining;
-    public float Timer, TimeSinceLevelStart;
+    public float Timer;
+    public float countDown = 5;
 
     public List<GameObject> targetPosition;
 
@@ -63,7 +71,24 @@ public class GameManager : MonoBehaviour
         if (IsWaveOngoing)
         {
             Timer += Time.deltaTime;
+            
             //_countDown.text = Timer.ToString("0");
+            countDown -= Time.deltaTime;
+            timerIsRunning = true;
+            if (timerIsRunning)
+            {
+                if (timeRemaining > 0)
+                {
+                    timeRemaining -= Time.deltaTime;
+                    DisplayTime(timeRemaining);
+                }
+                else
+                {
+                    Debug.Log("Time has run out!");
+                    timeRemaining = 0;
+                    timerIsRunning = false;
+                }
+            }
 
             if (Timer >= 180 && !_hasWon)
             {
@@ -72,11 +97,6 @@ public class GameManager : MonoBehaviour
 
             }
         }
-
-
-        TimeSinceLevelStart += Time.deltaTime;
-        //if (IsWaveOngoing == false)
-        //    TimeSinceLevelStart = 0;
     }
     #endregion
 
@@ -100,6 +120,14 @@ public class GameManager : MonoBehaviour
     {
         WinWindow.SetActive(true);
     }
+    void DisplayTime(float timeToDisplay)
+    {
+        timeToDisplay += 1;
 
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+
+        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
     #endregion
 }
