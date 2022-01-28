@@ -1,59 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5920096702364744640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BGM
-  m_EditorClassIdentifier: 
-  Path: event:/BGM
-  Guid:
-    Data1: 10349949
-    Data2: 1304431519
-    Data3: -1506721351
-    Data4: 1520016099
-  Banks:
-  - {fileID: 7619553090671907071}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-368273083299335837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Baby Vox (Lowered)_150bpm
-  m_EditorClassIdentifier: 
-  Path: event:/Baby Vox (Lowered)_150bpm
-  Guid:
-    Data1: 1863356365
-    Data2: 1180938686
-    Data3: 1204506267
-    Data4: 1182194521
-  Banks:
-  - {fileID: 7619553090671907071}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 10200
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,19 +13,42 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 1757875627280478788}
-  - {fileID: 7619553090671907071}
+  - {fileID: 6400733008747848458}
+  - {fileID: 7465139424529462609}
   EditorEvents:
-  - {fileID: -368273083299335837}
-  - {fileID: -5920096702364744640}
+  - {fileID: 2921175874809752361}
+  - {fileID: 8338671776074095617}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7619553090671907071}
+  - {fileID: 7465139424529462609}
   StringsBanks:
-  - {fileID: 1757875627280478788}
-  cacheTime: 637789586967882264
-  cacheVersion: 10
---- !u!114 &1757875627280478788
+  - {fileID: 6400733008747848458}
+  stringsBankWriteTime: 637789746330310374
+  cacheVersion: 8
+--- !u!114 &2921175874809752361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/bgm
+  m_EditorClassIdentifier: 
+  Path: event:/bgm
+  guid: 1546814c8bdaa44b80c769009914a574
+  Banks:
+  - {fileID: 7465139424529462609}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &6400733008747848458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,15 +60,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/Audio/FmodProject/ValentinaInSpace/Build/Desktop/Master.strings.bank
+  Path: Assets/Audio/fmod/valentina/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637789586967882264
+  lastModified: 637789746330310374
   FileSizes:
   - Name: Desktop
-    Value: 820
+    Value: 822
   Exists: 1
---- !u!114 &7619553090671907071
+--- !u!114 &7465139424529462609
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,11 +80,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: Assets/Audio/FmodProject/ValentinaInSpace/Build/Desktop/Master.bank
+  Path: Assets/Audio/fmod/valentina/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637789586967862317
+  lastModified: 637789746330280139
   FileSizes:
   - Name: Desktop
-    Value: 2299488
+    Value: 2647968
   Exists: 1
+--- !u!114 &8338671776074095617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/10-whoosh-transition-sound-effects-pack
+  m_EditorClassIdentifier: 
+  Path: event:/10-whoosh-transition-sound-effects-pack
+  guid: d1aaaf11b7cd0b44b1d96ddfd8bcfa40
+  Banks:
+  - {fileID: 7465139424529462609}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0

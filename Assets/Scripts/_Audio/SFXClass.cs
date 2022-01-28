@@ -9,6 +9,5 @@ public class SFXClass
 {
     public string sfxName;
     public int sfxID;
-    public EventReference path;
-    public EventInstance _event;
+    [EventRef]public string path;
 }

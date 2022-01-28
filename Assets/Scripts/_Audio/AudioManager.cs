@@ -6,19 +6,19 @@ using FMODUnity;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField]public  List<SFXClass> SfxList = new List<SFXClass>();
-    private int sfxListIndex;
-    [SerializeField] public EventReference bgm , ambiance;
     private EventInstance bgmEvent;
+    [EventRef]public string bgmRef;
     public const string BGM_PARAMETER_NAME = "BGMintensity";
     public static AudioManager instance;
     private void Awake()
     {
         instance = this;
-        bgmEvent = RuntimeManager.CreateInstance(bgm);
+        bgmEvent = RuntimeManager.CreateInstance(bgmRef);
     }
     private void Start()
     {
         PlayBGM();
+        PlayOneShot("SpaceWhoosh");
     }
 
     public void PlayOneShot(string sfxName)

@@ -62,6 +62,21 @@ namespace FMODUnity
         }
 
 #else
+        [InitializeOnLoadMethod]
+        private static void RegisterCompleteBuild()
+        {
+            EditorApplication.delayCall += CompleteBuild;
+        }
+
+        private static void CompleteBuild()
+        {
+            if (Settings.Instance.BoltUnitOptionsBuildPending)
+            {
+                Settings.Instance.BoltUnitOptionsBuildPending = false;
+                BuildBoltUnitOptions();
+            }
+        }
+
         private static void BuildBoltUnitOptions()
         {
 #if (UNITY_BOLT_EXIST)
@@ -113,16 +128,5 @@ namespace FMODUnity
                     .Where(t => string.Equals(t.Namespace, requestedNamespace, StringComparison.Ordinal));
         }
 #endif
-
-        public static void Startup()
-        {
-#if (UNITY_BOLT_EXIST || UNITY_VISUALSCRIPTING_EXIST)
-            if (Settings.Instance.BoltUnitOptionsBuildPending)
-            {
-                Settings.Instance.BoltUnitOptionsBuildPending = false;
-                BuildBoltUnitOptions();
-            }
-#endif
-        }
     }
 }
