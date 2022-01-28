@@ -27,6 +27,10 @@ public class AudioManager : MonoBehaviour
         InvokeRepeating("IncreaseIntensity", 0 ,bgmIntensityRate);
         PlayOneShot(SfxList[0].path, LIGHT_DARK_PARAM_NAME, 0, transform.position); //1,2   1,2
     }
+    private void Update()
+    {
+        SetIntensity();
+    }
     public static void PlayOneShot(string path, string parameterName, float parameterValue, Vector3 position = new Vector3())
     {
         var instance = RuntimeManager.CreateInstance(path);
@@ -54,14 +58,14 @@ public class AudioManager : MonoBehaviour
     private void IncreaseIntensity()
     {
         if(bgmIntensity < 4)
-        bgmParameterChange(BGM_PARAM_NAME, bgmIntensity++);
+        bgmParameterChange(BGM_PARAM_NAME, bgmIntensity);
     }
+    private void SetIntensity() => bgmParameterChange(BGM_PARAM_NAME, bgmIntensity);
 
+    public void OnDeath()
+    {
+        //snapshot to death snapshot
+        //Play one shot of death seq
+
+    }
 }
-/*    
- *                  private SFXClass sfxToPlay;
-                    sfxToPlay = AudioManager.instance.SfxList.Find(name => sfxToPlay.sfxName == gameObject.name);
-                    AudioManager.PlayOneShot(sfxToPlay.path, "LightDark", 2,transform.position);
-
-
-    }*/

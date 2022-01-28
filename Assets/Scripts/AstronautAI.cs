@@ -13,6 +13,8 @@ public class AstronautAI : MonoBehaviour
         {
             OnDeath.Invoke();
             Debug.Log("EnteredIntoInvoke");
+            var sfx = collision.gameObject.GetComponent<SpaceObject>().collisionSfx;
+            FMODUnity.RuntimeManager.PlayOneShot(sfx.path, transform.position);
         }
     }
 }

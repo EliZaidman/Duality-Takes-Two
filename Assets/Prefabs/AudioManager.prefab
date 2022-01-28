@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4737139904712318016
+--- !u!1 &2066016012661925685
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4737139904712318018}
-  - component: {fileID: 4737139904712318019}
+  - component: {fileID: 2066016012661925687}
+  - component: {fileID: 2066016012661925684}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -17,53 +17,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4737139904712318018
+--- !u!4 &2066016012661925687
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4737139904712318016}
+  m_GameObject: {fileID: 2066016012661925685}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.6985598, y: 1.3781562, z: 6.5044594}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4737139904712318019
+--- !u!114 &2066016012661925684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4737139904712318016}
+  m_GameObject: {fileID: 2066016012661925685}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0f18bcb9d3010147ba5b9eab94637fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ef97cef9c8b4cd45a4ce14d79ff69ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SfxList:
-  - sfxName: 
+  - sfxName: Sattelite
     sfxID: 0
-    path:
-      Guid:
-        Data1: 0
-        Data2: 0
-        Data3: 0
-        Data4: 0
-      Path: 
-  bgm:
-    Guid:
-      Data1: 10349949
-      Data2: 1304431519
-      Data3: -1506721351
-      Data4: 1520016099
-    Path: event:/BGM
-  ambiance:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+    path: 
+  - sfxName: collisionSattelite
+    sfxID: 0
+    path: 
+  - sfxName: Asteroid
+    sfxID: 0
+    path: 
+  - sfxName: collisionAsteroid
+    sfxID: 0
+    path: 
+  bgmRef: event:/bgm
+  bgmIntensity: 0
+  bgmIntensityRate: 0

@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{1d01a625-965c-4e23-b0ea-6af094f71587}">
 		<property name="name">
-			<value>Sattelite</value>
+			<value>satallite</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{c137b8b6-fdcd-44c2-b1db-ddcf3a12ba4a}</destination>
+			<destination>{9f44b1e5-cbf1-491b-bafa-a5ad863a91e9}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{3c703115-30c7-4123-bed1-b23e493f8647}</destination>
