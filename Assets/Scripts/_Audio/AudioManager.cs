@@ -60,7 +60,11 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBGM()
     {
-        if (PlaybackState(bgmEvent) != PLAYBACK_STATE.PLAYING) bgmEvent.start();
+        if (PlaybackState(bgmEvent) == PLAYBACK_STATE.PLAYING)
+        {
+            StopBGM();
+        }
+       bgmEvent.start();
     }
     
     public void StopBGM()

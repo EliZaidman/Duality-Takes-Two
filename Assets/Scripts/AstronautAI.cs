@@ -9,6 +9,7 @@ public class AstronautAI : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
         if (collision.gameObject.tag == "Obsticle")
         {
             OnDeath.Invoke();
