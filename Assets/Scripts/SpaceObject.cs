@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class SpaceObject : MonoBehaviour
 {
-    [SerializeField] private GameObject darknessObj , doubleDarknessObj, lightObj, doubleLightObj, defaultGameObj;
-
+    [SerializeField] private GameObject doubleLightObj;
+    [SerializeField] private GameObject lightObj;
+    [SerializeField] private GameObject defaultGameObj;
+    [SerializeField] private GameObject darknessObj;
+    [SerializeField] private GameObject doubleDarknessObj;
     [SerializeField] private LightCheck lightCheck;
 
     public void LightCheckTrigger()
@@ -13,32 +16,32 @@ public class SpaceObject : MonoBehaviour
         switch (lightCheck.lightConditions)
         {
             case LightCheck.LightConditions.darkness:
-                darknessObj.SetActive(true);
                 doubleDarknessObj.SetActive(false);
                 lightObj.SetActive(false);
                 doubleLightObj.SetActive(false);
                 defaultGameObj.SetActive(false);
+                darknessObj.SetActive(true);
                 break;
             case LightCheck.LightConditions.DoubleDarkness:
                 darknessObj.SetActive(false);
-                doubleDarknessObj.SetActive(true);
                 lightObj.SetActive(false);
                 doubleLightObj.SetActive(false);
                 defaultGameObj.SetActive(false);
+                doubleDarknessObj.SetActive(true);
                 break;
             case LightCheck.LightConditions.doubleLight:
                 darknessObj.SetActive(false);
                 doubleDarknessObj.SetActive(false);
                 lightObj.SetActive(false);
-                doubleLightObj.SetActive(true);
                 defaultGameObj.SetActive(false);
+                doubleLightObj.SetActive(true);
                 break;
             case LightCheck.LightConditions.light:
                 darknessObj.SetActive(false);
                 doubleDarknessObj.SetActive(false);
-                lightObj.SetActive(true);
                 doubleLightObj.SetActive(false);
                 defaultGameObj.SetActive(false);
+                lightObj.SetActive(true);
                 break;
             case LightCheck.LightConditions.Default:
                 darknessObj.SetActive(false);
