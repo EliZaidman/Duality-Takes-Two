@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{4c814615-da8b-4ba4-80c7-69009914a574}">
 		<property name="name">
-			<value>bgm</value>
+			<value>ambiance</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -59,7 +59,7 @@
 			<destination>{98432b57-6684-4047-8ba1-b98a48ed30aa}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{64f11204-d9b7-4537-aa01-06ffe16e9d2c}</destination>
+			<destination>{0ca7f7ce-69e7-4e10-975a-bd9c55205ff2}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{b715afaf-20d8-456b-8605-d1d9d6fe8ec8}" />

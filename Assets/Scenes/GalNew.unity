@@ -1389,10 +1389,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SfxList:
-  - sfxName: SpaceWhoosh
+  - sfxName: Sattelite
     sfxID: 0
-    path: event:/10-whoosh-transition-sound-effects-pack
+    path: event:/sattelite
   bgmRef: event:/bgm
+  bgmIntensity: 0
+  bgmIntensityRate: 20
 --- !u!1001 &3211556281179023338
 PrefabInstance:
   m_ObjectHideFlags: 0

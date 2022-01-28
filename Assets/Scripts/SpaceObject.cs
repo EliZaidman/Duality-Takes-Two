@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using FMOD.Studio;
+using FMODUnity;
 public class SpaceObject : MonoBehaviour
 {
+
     [SerializeField] private GameObject darknessObj , doubleDarknessObj, lightObj, doubleLightObj, defaultGameObj;
+    private void Awake()
+    {
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.collider.CompareTag("Player"))
