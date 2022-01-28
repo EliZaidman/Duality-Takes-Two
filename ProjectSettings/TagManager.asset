@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Darkness
-  - Light
   - StoppingTrigger
+  - TopLight
+  - TopShadow
+  - SideLight
+  - SideShadow
   layers:
   - Default
   - TransparentFX
