@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6485435670034423301}
   m_Layer: 0
   m_Name: Debri
-  m_TagString: Untagged
+  m_TagString: Obsticle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,9 +108,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f700783f7b118408ea058ea8875a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition:
-  - {fileID: 3217509630419125656, guid: d07cec8647ab730469b45cd22b2e537c, type: 3}
-  - {fileID: 2619312518971323377, guid: bbf58b99715747c459a21cf858a1dddf, type: 3}
-  - {fileID: 6685311889421447592, guid: 32606fda2f52a2342a509831decf8643, type: 3}
-  - {fileID: 1992962919536851468, guid: ebefc64c81c945d44baf2cc20465c59b, type: 3}
   moveSpeed: 1

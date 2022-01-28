@@ -82,6 +82,10 @@ public class GameManager : MonoBehaviour
         mainMenu.enabled = false;
     }
 
+    public void LostGame()
+    {
+        Debug.Log("HIT PLAYER");
+    }
 
     #endregion
 }

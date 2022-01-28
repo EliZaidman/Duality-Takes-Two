@@ -9,7 +9,7 @@ public class EnemyAI : MonoBehaviour
     
     public float moveSpeed;
 
-    public GameObject chosenPath;
+    private GameObject chosenPath;
 
     private void Awake()
     {
