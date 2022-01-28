@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class FloatingAstronaut : MonoBehaviour
 {
     [SerializeField]private GameObject centerObject;
@@ -28,7 +29,6 @@ public class FloatingAstronaut : MonoBehaviour
 
         while (true)
         {
-
          yield return new WaitForSeconds(Random.Range(freezeDelayRange.x,freezeDelayRange.y));
          yield return StartCoroutine(MoveToPosition(PickrRandomVector3()));
             
