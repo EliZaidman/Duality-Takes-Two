@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c2454c2c-c658-4ef8-b967-c654c8ca340f}">
+		<property name="assetPath">
+			<value>Baby Vox (Lowered)_150bpm.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>12.800000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6b1dc4af-f4a6-41da-90ce-cc923c298240}</destination>
+		</relationship>
+	</object>
+</objects>

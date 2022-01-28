@@ -20,30 +20,36 @@ public class AbstractSource : MonoBehaviour
         transform.Translate(((movementAxis*movementFactor)*movementSpeed)*Time.fixedDeltaTime);
     }
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other == positiveCollider)
+        if (!collision.gameObject.CompareTag("StoppingTrigger")) return;
+
+        if (collision.collider == positiveCollider)
         {
             blockPositive = true;
         }
 
-        if (other == negativeCollider)
+        if (collision.collider == negativeCollider)
         {
             blockNegative = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit(Collision collision)
     {
-        if (other == positiveCollider)
+        if (!collision.gameObject.CompareTag("StoppingTrigger")) return;
+
+        if (collision.collider == positiveCollider)
         {
             blockPositive = false;
         }
 
-        if (other == negativeCollider)
+        if (collision.collider == negativeCollider)
         {
             blockNegative = false;
         }
     }
 
+   
 }
