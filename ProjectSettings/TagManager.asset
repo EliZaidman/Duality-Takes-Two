@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Darkness
   - Light
+  - StoppingTrigger
   layers:
   - Default
   - TransparentFX

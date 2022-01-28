@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LightCheck : MonoBehaviour
 {
@@ -14,15 +15,10 @@ public class LightCheck : MonoBehaviour
     }
     public LightConditions lightConditions;
 
-    public bool hittingLight;
-    public GameObject lightCheck;
-    public int maxInten;
-    public int minInten;
-
-
     public List<GameObject> lightMeshList = new List<GameObject>();
     public List<GameObject> darkMeshList = new List<GameObject>();
 
+    [SerializeField] private UnityEvent OnSync;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -91,5 +87,12 @@ public class LightCheck : MonoBehaviour
         {
             Debug.Log("Inside Darkness");
         }
+
+        if (darkMeshList.Count == 0 && lightMeshList.Count == 0)
+        {
+            Debug.Log("Void");
+        }
+
+        OnSync.Invoke();
     }
 }
