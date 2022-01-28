@@ -6,6 +6,7 @@ using FMODUnity;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField]public  List<SFXClass> SfxList = new List<SFXClass>();
+    private int sfxListIndex;
     [SerializeField] public EventReference bgm , ambiance;
     private EventInstance bgmEvent;
     public const string BGM_PARAMETER_NAME = "BGMintensity";
@@ -20,12 +21,17 @@ public class AudioManager : MonoBehaviour
         PlayBGM();
     }
 
-    public void PlayOneShot(SFXClass sfx) => RuntimeManager.PlayOneShot(sfx.path);
+    public void PlayOneShot(SFXClass sfx)
+    {
+        sfxListIndex = sfx.sfxID;
+        RuntimeManager.PlayOneShot(SfxList[sfxListIndex].path);
+    } 
     public void PlayBGM() => bgmEvent.start();
     public void StopBGM()
     {
         bgmEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         bgmEvent.release();
+ 
     }
     public void bgmParameterChange(string parameterName,int parameterValue)
     {
