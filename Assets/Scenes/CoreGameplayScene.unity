@@ -3139,6 +3139,8 @@ MonoBehaviour:
   - {fileID: 580784283}
   _allEnemies:
   - {fileID: 6485435670034423320, guid: fc3285303fabf4846a40060a4379a4c1, type: 3}
+  - {fileID: 148208984384242342, guid: 66c634ed8529ff7438c1860357b07325, type: 3}
+  - {fileID: 2144927695240258381, guid: 2ec9ef2c9ebfddd499a454f5ab0d9c4a, type: 3}
   _Level: 20
   _enemy: {fileID: 6485435670034423320, guid: fc3285303fabf4846a40060a4379a4c1, type: 3}
   _ZombiesInScene: []
