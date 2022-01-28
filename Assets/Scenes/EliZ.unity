@@ -2675,6 +2675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RandomTarget
       objectReference: {fileID: 0}
+    - target: {fileID: 3517027754925300702, guid: 5a5f1f31dc2ceb34c82f23f8fd5133d0, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a5f1f31dc2ceb34c82f23f8fd5133d0, type: 3}
 --- !u!1 &1721845711
@@ -3065,6 +3069,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3517027754925300702, guid: 5a5f1f31dc2ceb34c82f23f8fd5133d0, type: 3}
   m_PrefabInstance: {fileID: 1702070823}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &2059985791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059985790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 88.84317, y: 7.6916075, z: 48.41701}
+  m_Center: {x: 3.8126068, y: 3.3458037, z: -5.673601}
 --- !u!1 &2079756150
 GameObject:
   m_ObjectHideFlags: 0
