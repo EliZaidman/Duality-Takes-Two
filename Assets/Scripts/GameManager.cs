@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEditor;
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     #region Singleton
@@ -35,14 +36,12 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Public Fields
-    //public GameObject rest;
-    //public ParticleSystem hitEffect;
-    //public ParticleSystem deathEffect;
-    //public ParticleSystem warningEffect;
-    public int Level, TargetsRemaining;
+    public int TargetsRemaining;
     public float Timer, TimeSinceLevelStart;
 
     public List<GameObject> targetPosition;
+
+    public Canvas mainMenu;
     #endregion
 
     #region Unity Callbacks
@@ -70,35 +69,18 @@ public class GameManager : MonoBehaviour
 
 
         TimeSinceLevelStart += Time.deltaTime;
-        if (IsWaveOngoing == false)
-            TimeSinceLevelStart = 0;
+        //if (IsWaveOngoing == false)
+        //    TimeSinceLevelStart = 0;
     }
     #endregion
 
     #region Methods
-    //public void NextLevel()
-    //{
-    //    if (Level < 1)
-    //    {
-    //        _nextLevelTxt.text = "Start Game!";
-    //        Timer = 5;
-    //        _spawnerManager._timeBetweenSpawns = 1;
-    //        _spawnerManager._maxSpawns += Level;
-    //        _spawnerManager._currentTimeBetweenSpawns = _spawnerManager._timeBetweenSpawns;
-    //        IsWaveOngoing = false;
-    //    }
 
-    //    else
-    //    {
-    //        _nextLevelTxt.text = "Next Level!";
-    //        Level++;
-    //        Timer = 5;
-    //        _spawnerManager._timeBetweenSpawns = 1;
-    //        _spawnerManager._maxSpawns += Level;
-    //        _spawnerManager._currentTimeBetweenSpawns = _spawnerManager._timeBetweenSpawns;
-    //        IsWaveOngoing = false;
-    //    }
-    //}
+    public void StartGame()
+    {
+        IsWaveOngoing = true;
+        mainMenu.enabled = false;
+    }
 
 
     #endregion

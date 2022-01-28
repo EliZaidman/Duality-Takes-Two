@@ -31,7 +31,7 @@ public class SpawnerManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> _allEnemies;
 
-    int _Level = 5;
+    public int _Level;
 
     [SerializeField]
     public GameObject _enemy;
