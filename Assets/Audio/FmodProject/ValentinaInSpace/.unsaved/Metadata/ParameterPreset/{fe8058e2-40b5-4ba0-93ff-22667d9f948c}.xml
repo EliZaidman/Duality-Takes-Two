@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{fe8058e2-40b5-4ba0-93ff-22667d9f948c}">
+		<property name="name">
+			<value>BGMintensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{86c1a1cb-327a-4ffa-a83d-c1accc48e40d}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{d7f68811-0121-44e0-8b3b-b0deb0bbd044}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{d7f68811-0121-44e0-8b3b-b0deb0bbd044}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
