@@ -154,11 +154,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211556282191940387, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_TagString
-      value: Darkness
+      value: SideShadow
       objectReference: {fileID: 0}
     - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.29741845
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.844775
       objectReference: {fileID: 0}
     - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_LocalPosition.x
@@ -202,7 +210,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7822833317438960542, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_TagString
-      value: Darkness
+      value: SideShadow
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615585117179843147, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 252813b8f6cb179439520d28af40eace, type: 3}
@@ -338,7 +350,7 @@ GameObject:
   - component: {fileID: 501785540}
   m_Layer: 0
   m_Name: YLightSource
-  m_TagString: Untagged
+  m_TagString: SideLight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +480,7 @@ GameObject:
   - component: {fileID: 587514723}
   m_Layer: 0
   m_Name: YShadowSource
-  m_TagString: Untagged
+  m_TagString: SideShadow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -671,7 +683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616883652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.87, y: 3.47, z: 0}
+  m_LocalPosition: {x: 0.96, y: -2.04, z: 0}
   m_LocalScale: {x: 14.02564, y: 6.564894, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1235,7 +1247,7 @@ GameObject:
   - component: {fileID: 1138840513}
   m_Layer: 0
   m_Name: XShadowSource
-  m_TagString: Untagged
+  m_TagString: TopShadow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1520,11 +1532,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3211556282191940387, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_TagString
-      value: Darkness
+      value: TopShadow
       objectReference: {fileID: 0}
     - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.70176
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1568,7 +1588,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7822833317438960542, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_TagString
-      value: Darkness
+      value: TopShadow
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615585117179843147, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 252813b8f6cb179439520d28af40eace, type: 3}
@@ -1654,7 +1678,7 @@ GameObject:
   - component: {fileID: 2009817600}
   m_Layer: 0
   m_Name: XLightSource (1)
-  m_TagString: Untagged
+  m_TagString: TopLight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1787,9 +1811,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 3211556282191940387, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_TagString
+      value: TopLight
+      objectReference: {fileID: 0}
     - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.70176
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1830,6 +1866,14 @@ PrefabInstance:
     - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822833317438960542, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_TagString
+      value: TopLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615585117179843147, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 252813b8f6cb179439520d28af40eace, type: 3}
@@ -2094,9 +2138,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 3211556282191940387, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_TagString
+      value: SideLight
+      objectReference: {fileID: 0}
     - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.29741845
+      objectReference: {fileID: 0}
+    - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.844775
       objectReference: {fileID: 0}
     - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2137,6 +2193,14 @@ PrefabInstance:
     - target: {fileID: 3211556282191940388, guid: 252813b8f6cb179439520d28af40eace, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822833317438960542, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_TagString
+      value: SideLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615585117179843147, guid: 252813b8f6cb179439520d28af40eace, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 252813b8f6cb179439520d28af40eace, type: 3}
