@@ -47,6 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9e15835825c594c8a721051d71946b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnBreak:
+    m_PersistentCalls:
+      m_Calls: []
   darknessObj: {fileID: 640257684724760528}
   doubleDarknessObj: {fileID: 640257684724760528}
   lightObj: {fileID: 1142188573863296268}
@@ -63,9 +66,33 @@ MonoBehaviour:
     path: 
   stateProperties:
   - stateName: darkness
-    obj: {fileID: 1142188573863296268}
+    obj: {fileID: 640257684724760528}
     lightCondition: 3
-    doHitPlayer: 0
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: DoubleDarkness
+    obj: {fileID: 640257684724760528}
+    lightCondition: 4
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: Default
+    obj: {fileID: 640257684724760528}
+    lightCondition: 0
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: light
+    obj: {fileID: 1142188573863296268}
+    lightCondition: 1
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: doubleLight
+    obj: {fileID: 1142188573863296268}
+    lightCondition: 2
+    doHitPlayer: 1
     colState: 0
     stateFmodParamValue: 1
 --- !u!114 &3045235186685767391
@@ -109,7 +136,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144927695240258381}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5c6ac237fd36e24a885dac5d33adb31, type: 3}
   m_Name: 
@@ -131,8 +158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f700783f7b118408ea058ea8875a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  lightPushmoveSpeed: 3
+  normalmoveSpeed: 1
   _lightCheck: {fileID: 0}
+  ispushedFromLight: 1
 --- !u!1 &7530399518661262500
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +176,7 @@ GameObject:
   - component: {fileID: 8612479834033462744}
   m_Layer: 6
   m_Name: SatalitePivot
-  m_TagString: Obsticle
+  m_TagString: ObtacleChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

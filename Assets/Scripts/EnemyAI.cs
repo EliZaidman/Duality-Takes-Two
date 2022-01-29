@@ -7,11 +7,14 @@ public class EnemyAI : MonoBehaviour
     //Set this value in the inspector
 
     
-    public float moveSpeed;
+    public float lightPushmoveSpeed;
+    public float normalmoveSpeed;
 
     private GameObject chosenPath;
 
     public LightCheck _lightCheck;
+
+    [SerializeField] bool ispushedFromLight;
 
     
     private void Awake()
@@ -20,19 +23,22 @@ public class EnemyAI : MonoBehaviour
         Debug.Log(chosenPath);
         _lightCheck = gameObject.GetComponent<LightCheck>();
 
-
     }
     void Update()
     {
+        if (ispushedFromLight)
+        {
 
-        if (_lightCheck.lightConditions == LightCheck.LightConditions.light || _lightCheck.lightConditions == LightCheck.LightConditions.doubleLight)
-        {
-            moveAway();
-        }
-        else
-        {
-            moveInside();
-        }
+
+            if (_lightCheck.lightConditions == LightCheck.LightConditions.light || _lightCheck.lightConditions == LightCheck.LightConditions.doubleLight)
+            {
+                moveAway();
+            }
+            else
+            {
+                moveInside();
+            }
+        }else moveInside();
 
     }
 
@@ -41,7 +47,7 @@ public class EnemyAI : MonoBehaviour
         Vector3 directionToMove = chosenPath.transform.position - transform.position;
 
 
-        directionToMove = directionToMove.normalized * Time.deltaTime * moveSpeed;
+        directionToMove = directionToMove.normalized * Time.deltaTime * normalmoveSpeed;
 
 
         transform.Translate(directionToMove);
@@ -54,8 +60,7 @@ public class EnemyAI : MonoBehaviour
     {
         Vector3 directionToMoveAway = _lightCheck.FindVectorPos();
 
-
-        directionToMoveAway = directionToMoveAway.normalized * Time.deltaTime * moveSpeed * 25;
+        directionToMoveAway = directionToMoveAway.normalized * Time.deltaTime * lightPushmoveSpeed;
 
         transform.Translate(directionToMoveAway);
     }
