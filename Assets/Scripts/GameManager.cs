@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEditor;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     #region Singleton
@@ -24,7 +25,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Serialized Fields
-    
+
     public SpawnerManager _spawnerManager;
 
     //[SerializeField]
@@ -122,5 +123,13 @@ public class GameManager : MonoBehaviour
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
+    //[System.Obsolete]
+    public void ResetGame()
+    {
+        foreach (GameObject enemy in FindObjectOfType<SpawnerManager>().EnemiesInScene)
+            Destroy(enemy);
+        FindObjectOfType<SpawnerManager>().EnemiesInScene.Clear();
+        SceneManager.LoadScene("Menu");
+    }
     #endregion
 }
