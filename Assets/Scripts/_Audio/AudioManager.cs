@@ -51,8 +51,7 @@ public class AudioManager : MonoBehaviour
         instance.setParameterByName(parameterName, parameterValue);
         instance.start();
         instance.release();
-    }
-    public void PlayOneShotByName(string sfxName)
+    }    public void PlayOneShotByName(string sfxName)
     {
         var sfxToPlay = SfxList.Find(name => name.sfxName == sfxName);
         RuntimeManager.PlayOneShot(sfxToPlay.path);
@@ -89,4 +88,6 @@ public class AudioManager : MonoBehaviour
         //Play one shot of death seq
 
     }
+
+
 }

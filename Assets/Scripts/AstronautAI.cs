@@ -6,10 +6,10 @@ using UnityEngine.Events;
 public class AstronautAI : MonoBehaviour
 {
     [SerializeField] private UnityEvent OnDeath;
+    private const string CHICKEN_NAME = "";
 
     private void OnCollisionEnter(Collision collision)
     {
-
         if (collision.gameObject.tag == "Obsticle")
         {
             OnDeath.Invoke();
@@ -18,4 +18,6 @@ public class AstronautAI : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot(sfx.path, transform.position);
         }
     }
+
+
 }
