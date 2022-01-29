@@ -51,12 +51,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9e15835825c594c8a721051d71946b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doubleLightObj: {fileID: 8426729135601632235}
-  lightObj: {fileID: 8221048836320979519}
-  defaultGameObj: {fileID: 6448546914624737277}
+  OnBreak:
+    m_PersistentCalls:
+      m_Calls: []
   darknessObj: {fileID: 3857335634169991785}
   doubleDarknessObj: {fileID: 1788025438140531083}
+  lightObj: {fileID: 8221048836320979519}
+  doubleLightObj: {fileID: 8426729135601632235}
+  defaultGameObj: {fileID: 6448546914624737277}
   lightCheck: {fileID: 3857335633980886836}
+  objStateSfx:
+    sfxName: 
+    sfxID: 0
+    path: 
+  collisionSfx:
+    sfxName: 
+    sfxID: 0
+    path: 
+  stateProperties:
+  - stateName: Default
+    obj: {fileID: 6448546914624737277}
+    lightCondition: 0
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 0
+  - stateName: light
+    obj: {fileID: 8221048836320979519}
+    lightCondition: 1
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 0
+  - stateName: doubleLight
+    obj: {fileID: 8426729135601632235}
+    lightCondition: 2
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 0
+  - stateName: darkness
+    obj: {fileID: 3857335634169991785}
+    lightCondition: 3
+    doHitPlayer: 0
+    colState: 0
+    stateFmodParamValue: 0
+  - stateName: DoubleDarkness
+    obj: {fileID: 1788025438140531083}
+    lightCondition: 4
+    doHitPlayer: 0
+    colState: 0
+    stateFmodParamValue: 0
 --- !u!114 &3857335633980886836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f700783f7b118408ea058ea8875a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  lightPushmoveSpeed: 2
+  normalmoveSpeed: 1
+  _lightCheck: {fileID: 0}
+  ispushedFromLight: 0
 --- !u!1 &3857335634169991785
 GameObject:
   m_ObjectHideFlags: 0

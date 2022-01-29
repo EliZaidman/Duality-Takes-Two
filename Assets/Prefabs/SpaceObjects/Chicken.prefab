@@ -82,12 +82,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9e15835825c594c8a721051d71946b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doubleLightObj: {fileID: 6482431457801198268}
-  lightObj: {fileID: 6869685317171253087}
-  defaultGameObj: {fileID: 6482431458583414972}
-  darknessObj: {fileID: 6482431457731929499}
-  doubleDarknessObj: {fileID: 6482431458737286277}
   lightCheck: {fileID: 2167446373502981144}
+  objStateSfx:
+    sfxName: 
+    sfxID: 0
+    path: 
+  collisionSfx:
+    sfxName: 
+    sfxID: 0
+    path: 
+  stateProperties:
+  - stateName: darkness
+    obj: {fileID: 6482431457731929499}
+    lightCondition: 3
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 0
+  - stateName: DoubleDarkness
+    obj: {fileID: 6482431458737286277}
+    lightCondition: 4
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 0
+  - stateName: Default
+    obj: {fileID: 6482431458583414972}
+    lightCondition: 0
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 0
+  - stateName: light
+    obj: {fileID: 6869685317171253087}
+    lightCondition: 1
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 0
+  - stateName: doubleLight
+    obj: {fileID: 6482431457801198268}
+    lightCondition: 2
+    doHitPlayer: 1
+    colState: 2
+    stateFmodParamValue: 0
+  OnBreak:
+    m_PersistentCalls:
+      m_Calls: []
+  OnConsumed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2995696281638607243}
+        m_TargetAssemblyTypeName: SpaceObject, Assembly-CSharp
+        m_MethodName: DestroyObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2167446373502981144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +199,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f700783f7b118408ea058ea8875a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  lightPushmoveSpeed: 2
+  normalmoveSpeed: 1
+  _lightCheck: {fileID: 0}
+  ispushedFromLight: 0
 --- !u!1001 &6023405862640988686
 PrefabInstance:
   m_ObjectHideFlags: 0

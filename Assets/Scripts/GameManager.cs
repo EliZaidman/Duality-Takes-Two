@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Serialized Fields
-    [SerializeField]
-    private SpawnerManager _spawnerManager;
+    
+    public SpawnerManager _spawnerManager;
 
     //[SerializeField]
     //private TextMeshProUGUI _countDown, _levelText, _nextLevelTxt;

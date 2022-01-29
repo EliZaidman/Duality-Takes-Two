@@ -47,12 +47,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9e15835825c594c8a721051d71946b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doubleLightObj: {fileID: 1142188573863296268}
-  lightObj: {fileID: 1142188573863296268}
-  defaultGameObj: {fileID: 640257684724760528}
+  OnBreak:
+    m_PersistentCalls:
+      m_Calls: []
   darknessObj: {fileID: 640257684724760528}
   doubleDarknessObj: {fileID: 640257684724760528}
+  lightObj: {fileID: 1142188573863296268}
+  doubleLightObj: {fileID: 1142188573863296268}
+  defaultGameObj: {fileID: 640257684724760528}
   lightCheck: {fileID: 3045235186685767391}
+  objStateSfx:
+    sfxName: 
+    sfxID: 0
+    path: 
+  collisionSfx:
+    sfxName: 
+    sfxID: 0
+    path: 
+  stateProperties:
+  - stateName: darkness
+    obj: {fileID: 640257684724760528}
+    lightCondition: 3
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: DoubleDarkness
+    obj: {fileID: 640257684724760528}
+    lightCondition: 4
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: Default
+    obj: {fileID: 640257684724760528}
+    lightCondition: 0
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: light
+    obj: {fileID: 1142188573863296268}
+    lightCondition: 1
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: doubleLight
+    obj: {fileID: 1142188573863296268}
+    lightCondition: 2
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
 --- !u!114 &3045235186685767391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f700783f7b118408ea058ea8875a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  lightPushmoveSpeed: 3
+  normalmoveSpeed: 1
+  _lightCheck: {fileID: 0}
+  ispushedFromLight: 1
 --- !u!1 &7530399518661262500
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,9 +173,10 @@ GameObject:
   - component: {fileID: 2909829736075882217}
   - component: {fileID: 3232812998245196841}
   - component: {fileID: 4965831366305821806}
+  - component: {fileID: 8612479834033462744}
   m_Layer: 6
   m_Name: SatalitePivot
-  m_TagString: Untagged
+  m_TagString: ObtacleChild
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,6 +224,18 @@ CapsuleCollider:
   m_Height: 2.6896482
   m_Direction: 1
   m_Center: {x: 0.000000029412721, y: 0.21187164, z: -0.0024059415}
+--- !u!114 &8612479834033462744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7530399518661262500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076e218c504551b479235eb34f268e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &223130101786378333
 PrefabInstance:
   m_ObjectHideFlags: 0

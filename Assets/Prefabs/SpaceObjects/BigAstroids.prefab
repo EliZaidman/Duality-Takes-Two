@@ -51,12 +51,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9e15835825c594c8a721051d71946b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doubleLightObj: {fileID: 6012793005420283676}
-  lightObj: {fileID: 1548823136139486483}
-  defaultGameObj: {fileID: 7058986796246799466}
-  darknessObj: {fileID: 3857335634169991785}
-  doubleDarknessObj: {fileID: 8753284326452337991}
   lightCheck: {fileID: 3857335633980886836}
+  objStateSfx:
+    sfxName: 
+    sfxID: 0
+    path: 
+  collisionSfx:
+    sfxName: 
+    sfxID: 0
+    path: 
+  stateProperties:
+  - stateName: Default
+    obj: {fileID: 7058986796246799466}
+    lightCondition: 0
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 0
+  - stateName: darkness
+    obj: {fileID: 3857335634169991785}
+    lightCondition: 3
+    doHitPlayer: 0
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: light
+    obj: {fileID: 1548823136139486483}
+    lightCondition: 1
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: doubleLight
+    obj: {fileID: 6012793005420283676}
+    lightCondition: 2
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  - stateName: DoubleDarkness
+    obj: {fileID: 8753284326452337991}
+    lightCondition: 4
+    doHitPlayer: 1
+    colState: 0
+    stateFmodParamValue: 1
+  OnBreak:
+    m_PersistentCalls:
+      m_Calls: []
+  OnConsumed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3857335633980886836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f700783f7b118408ea058ea8875a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  lightPushmoveSpeed: 2
+  normalmoveSpeed: 1
+  _lightCheck: {fileID: 0}
+  ispushedFromLight: 0
 --- !u!1 &3857335634169991785
 GameObject:
   m_ObjectHideFlags: 0
