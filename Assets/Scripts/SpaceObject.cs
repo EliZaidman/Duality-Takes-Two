@@ -28,6 +28,7 @@ public class SpaceObject : MonoBehaviour
                 lightObj.SetActive(false);
                 doubleLightObj.SetActive(false);
                 defaultGameObj.SetActive(false);
+                if(objStateSfx != null)
                 AudioManager.PlayOneShot(objStateSfx.path, "LightDark", 2, transform.position);
                 break;
             case LightCheck.LightConditions.DoubleDarkness:
@@ -50,7 +51,8 @@ public class SpaceObject : MonoBehaviour
                 lightObj.SetActive(true);
                 doubleLightObj.SetActive(false);
                 defaultGameObj.SetActive(false);
-                AudioManager.PlayOneShot(objStateSfx.path, "LightDark", 1, transform.position);
+                if (objStateSfx != null)
+                    AudioManager.PlayOneShot(objStateSfx.path, "LightDark", 1, transform.position);
                 break;
             case LightCheck.LightConditions.Default:
                 darknessObj.SetActive(false);
