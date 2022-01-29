@@ -103,6 +103,7 @@ public class GameManager : MonoBehaviour
     public void LostGame()
     {
         LoseWindow.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void StartSpawning()
@@ -124,8 +125,9 @@ public class GameManager : MonoBehaviour
     }
 
     //[System.Obsolete]
-    public void ResetGame()
+    public void GoToMenu()
     {
+        Time.timeScale = 1;
         foreach (GameObject enemy in FindObjectOfType<SpawnerManager>().EnemiesInScene)
             Destroy(enemy);
         FindObjectOfType<SpawnerManager>().EnemiesInScene.Clear();
