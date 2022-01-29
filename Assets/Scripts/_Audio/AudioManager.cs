@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
     private bool releaseIsOn;
 
 
+
     public static AudioManager instance;
     private void Awake()
     {
@@ -43,7 +44,10 @@ public class AudioManager : MonoBehaviour
         PlayBGM();
         InvokeRepeating("IncreaseIntensity", 0 ,bgmIntensityRate);
     }
-
+    private void Update()
+    {
+        SetIntensity();
+    }
     public void ReleaseOneShot(EventInstance instance)
     {
         if(PlaybackState(instance) != PLAYBACK_STATE.PLAYING && !releaseIsOn)
@@ -104,4 +108,7 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    public void PlayStartUI() => RuntimeManager.PlayOneShot("event:/uiStartGame", transform.position);
+
+    public void WhooshUI() => RuntimeManager.PlayOneShot("event:/uiWhoosh", transform.position);
 }
