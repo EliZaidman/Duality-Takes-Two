@@ -65,12 +65,12 @@ MonoBehaviour:
   - stateName: Default
     obj: {fileID: 7058986796246799466}
     lightCondition: 0
-    doHitPlayer: 0
+    doHitPlayer: 1
     colState: 0
   - stateName: darkness
     obj: {fileID: 8863610989997837301}
     lightCondition: 3
-    doHitPlayer: 0
+    doHitPlayer: 1
     colState: 0
   - stateName: light
     obj: {fileID: 1548823136139486483}
@@ -80,13 +80,13 @@ MonoBehaviour:
   - stateName: doubleLight
     obj: {fileID: 6012793005420283676}
     lightCondition: 2
-    doHitPlayer: 0
+    doHitPlayer: 1
     colState: 0
   - stateName: DoubleDarkness
     obj: {fileID: 8753284326452337991}
     lightCondition: 4
-    doHitPlayer: 0
-    colState: 0
+    doHitPlayer: 1
+    colState: 1
   OnBreak:
     m_PersistentCalls:
       m_Calls: []
@@ -328,7 +328,7 @@ PrefabInstance:
     - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0d590b9d1e8a95a4e8adf90d8771cb21, type: 2}
+      objectReference: {fileID: 2100000, guid: dffa82b3786b81a4985df097dffbb1ea, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: DoubleShadowMeteor

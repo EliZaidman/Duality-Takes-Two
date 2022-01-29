@@ -9,7 +9,11 @@ public class StringCaller : MonoBehaviour
     public List<string> fyiFacts = new List<string>();
 
     public TextMeshProUGUI factsUI;
-   
+
+    private void OnEnable()
+    {
+        readFact();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))

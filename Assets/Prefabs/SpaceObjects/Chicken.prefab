@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9e15835825c594c8a721051d71946b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enumvalue: 0
   lightCheck: {fileID: 2167446373502981144}
   objStateSfx:
     sfxName: 
@@ -64,33 +65,28 @@ MonoBehaviour:
   - stateName: darkness
     obj: {fileID: 6482431457731929499}
     lightCondition: 3
-    doHitPlayer: 0
+    doHitPlayer: 1
     colState: 0
-    stateFmodParamValue: 0
   - stateName: DoubleDarkness
     obj: {fileID: 6482431458737286277}
     lightCondition: 4
-    doHitPlayer: 0
+    doHitPlayer: 1
     colState: 0
-    stateFmodParamValue: 0
   - stateName: Default
     obj: {fileID: 6482431458583414972}
     lightCondition: 0
     doHitPlayer: 1
     colState: 0
-    stateFmodParamValue: 0
   - stateName: light
     obj: {fileID: 6869685317171253087}
     lightCondition: 1
-    doHitPlayer: 0
+    doHitPlayer: 1
     colState: 0
-    stateFmodParamValue: 0
   - stateName: doubleLight
     obj: {fileID: 6482431457801198268}
     lightCondition: 2
-    doHitPlayer: 0
+    doHitPlayer: 1
     colState: 2
-    stateFmodParamValue: 0
   OnBreak:
     m_PersistentCalls:
       m_Calls: []
