@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{38c37a90-9a2f-4ab1-99af-09c03dfbd6d5}">
 		<property name="name">
-			<value>meteor</value>
+			<value>bigAsteroid</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>

@@ -6,7 +6,7 @@ using FMODUnity;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] public List<SFXClass> SfxList = new List<SFXClass>();
-    public const string LIGHT_DARK_PARAM_NAME = "LightDark";
+    public const string LIGHT_DARK_LIGHTER_DARKER_PARAM_NAME = "LightDark";
     [Header("BGM")]
     public const string BGM_PARAM_NAME = "Intensity";
     private EventInstance bgmEvent;
@@ -106,6 +106,5 @@ public class AudioManager : MonoBehaviour
         //Play one shot of death seq
 
     }
-
 
 }

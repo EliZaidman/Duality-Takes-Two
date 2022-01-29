@@ -374,6 +374,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-8904933545065903027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/chicken/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-8898493373184135884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -763,10 +785,10 @@ MonoBehaviour:
   Path: Assets/Audio/fmod/valentina/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637790200949928985
+  lastModified: 637790598960122572
   FileSizes:
   - Name: Desktop
-    Value: 1256
+    Value: 1376
   Exists: 1
 --- !u!114 &-8674757874076050097
 MonoBehaviour:
@@ -2990,7 +3012,33 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &-7349333219219032157
+=======
+--- !u!114 &-7034837519842424296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/colChicken/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &-7025442243281580127
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3364,7 +3412,35 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &-7105047332641808212
+=======
+--- !u!114 &-6816808047041749230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/bigAsteroid
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/bigAsteroid
+  guid: 907ac3382f9ab14a99af09c03dfbd6d5
+  Banks:
+  - {fileID: -5294603435687106138}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6321523734327978822}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6815349166665083456
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3827,8 +3903,35 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
+<<<<<<< Updated upstream
   Exists: 1
 --- !u!114 &-6828256557880746170
+=======
+  Exists: 0
+--- !u!114 &-6444467101445117030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-6434436431407838675
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3893,8 +3996,36 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
+<<<<<<< Updated upstream
   Exists: 0
 --- !u!114 &-6808902788646084765
+=======
+  Exists: 1
+--- !u!114 &-6414265918178452108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/colSmallAsteroid
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/colSmallAsteroid
+  guid: dfa1484ab612234b933a59833f7e262a
+  Banks:
+  - {fileID: -5294603435687106138}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6412694233816804337
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4588,6 +4719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/bgm/Intensity
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   Name: Intensity
   Min: 0
   Max: 5
@@ -4599,6 +4731,20 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-6349310452782252522
+=======
+  Path: event:/sfx/meteor
+  guid: 907ac3382f9ab14a99af09c03dfbd6d5
+  Banks: []
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1053875569671810024}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5816339438281517033
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5248,6 +5394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/sfx/meteor
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   Path: event:/sfx/meteor
   guid: 907ac3382f9ab14a99af09c03dfbd6d5
   Banks:
@@ -5261,6 +5408,17 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 0
 --- !u!114 &-5847423791549298318
+=======
+  Path: Assets/Audio/fmod/valentina/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637790598960092642
+  FileSizes:
+  - Name: Desktop
+    Value: 4677024
+  Exists: 1
+--- !u!114 &-5285761032862736785
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5470,6 +5628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Sattelite/LightDark
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   Name: LightDark
   Min: 0
   Max: 1
@@ -5481,6 +5640,21 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-5729719616676288311
+=======
+  Path: event:/sfx/chicken
+  guid: ba3c5311f1faf14f84c7a1d69212114a
+  Banks:
+  - {fileID: -5294603435687106138}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8904933545065903027}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5138144949911189685
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6624,7 +6798,33 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &-4949146887791770070
+=======
+--- !u!114 &-4305872186911707197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/satallite/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-4240345720207167105
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8220,6 +8420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   Name: LightDark
   Min: 0
   Max: 1
@@ -9166,6 +9367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/ost/bgm
   m_EditorClassIdentifier: 
+=======
+>>>>>>> Stashed changes
   Path: event:/ost/bgm
   guid: 02c8d10ab23fc146b08cd41efd91f017
   Banks:
@@ -9174,11 +9377,16 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
+<<<<<<< Updated upstream
   - {fileID: 8072399235821992399}
+=======
+  - {fileID: 675417202771612867}
+>>>>>>> Stashed changes
   MinDistance: 0
   MaxDistance: 0
   Length: 337761
 --- !u!114 &-3386134810360413875
+<<<<<<< Updated upstream
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9883,6 +10091,8 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-2952340938410566122
+=======
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11797,7 +12007,34 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &-1778207156944830068
+=======
+--- !u!114 &-2163010939160607077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/colBigAsteroid
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/colBigAsteroid
+  guid: b396ba30521fba489a38c4586935cc4c
+  Banks:
+  - {fileID: -5294603435687106138}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2160749745438785515
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11919,6 +12156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   Name: LightDark
   Min: 0
   Max: 1
@@ -11930,6 +12168,19 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-1673524471054928962
+=======
+  Path: event:/sfx/colMeteor
+  guid: b396ba30521fba489a38c4586935cc4c
+  Banks: []
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1962258767538482446
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13051,7 +13302,33 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &-821416117858826669
+=======
+--- !u!114 &-1007209175759332881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/chicken/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &-1003097004598251731
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13734,7 +14011,34 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &-374474571904515879
+=======
+--- !u!114 &-507132596990724041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ost/ambiance
+  m_EditorClassIdentifier: 
+  Path: event:/ost/ambiance
+  guid: 1546814c8bdaa44b80c769009914a574
+  Banks:
+  - {fileID: -5294603435687106138}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 178269
+--- !u!114 &-490418776798408449
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14152,7 +14456,33 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &-97618212664784073
+=======
+--- !u!114 &-197711335548902778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/satallite/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &-190138332023053147
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14325,17 +14655,19 @@ MonoBehaviour:
   - {fileID: -3391288822183803295}
   - {fileID: -507132596990724041}
   - {fileID: 5134605072507655492}
-  - {fileID: -5854271997199374146}
-  - {fileID: -1976583231079722179}
   - {fileID: -5143221229931183341}
   - {fileID: 2427392186646439985}
   - {fileID: 1467892212532346307}
+  - {fileID: 1597898155027561411}
+  - {fileID: -6816808047041749230}
+  - {fileID: -2163010939160607077}
+  - {fileID: -6414265918178452108}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5294603435687106138}
   StringsBanks:
   - {fileID: -8706220546211290967}
-  stringsBankWriteTime: 637790200949928985
+  stringsBankWriteTime: 637790598960122572
   cacheVersion: 8
 --- !u!114 &1068340004006055
 MonoBehaviour:
@@ -15525,6 +15857,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+--- !u!114 &675417202771612867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &691829183556279614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15855,6 +16209,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &1053875569671810024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/meteor/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &1063129243754445388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16361,6 +16737,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+--- !u!114 &1331091102796029548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/satallite/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &1331103651728067810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16493,6 +16891,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &1383925877403230214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/meteor/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &1388726193056506392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16824,6 +17244,30 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &1597898155027561411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/smallAsteroid
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/smallAsteroid
+  guid: 7f667765d973e54aa408e9545aaea532
+  Banks:
+  - {fileID: -5294603435687106138}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 9050709857408906049}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1602653200773388611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18299,7 +18743,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -7034837519842424296}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -22639,7 +23084,11 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
+<<<<<<< Updated upstream
   - {fileID: 6018907801432911772}
+=======
+  - {fileID: -197711335548902778}
+>>>>>>> Stashed changes
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -23524,6 +23973,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &5857427238616639669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &5861333833705123103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24096,6 +24567,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &6321523734327978822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bigAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &6329994413545918604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26452,6 +26945,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &7662934170189489267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/chicken/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &7662980193981889329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28564,7 +29079,11 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+<<<<<<< Updated upstream
 --- !u!114 &8999296985267584104
+=======
+--- !u!114 &9050709857408906049
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28574,17 +29093,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+<<<<<<< Updated upstream
   m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
   Max: 1
+=======
+  m_Name: parameter:/smallAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+>>>>>>> Stashed changes
   Default: 0
   ID:
     data1: 0
     data2: 0
   Type: 1
   IsGlobal: 0
+<<<<<<< Updated upstream
   Exists: 0
 --- !u!114 &9031075595015649421
 MonoBehaviour:
@@ -28608,6 +29136,9 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+=======
+  Exists: 1
+>>>>>>> Stashed changes
 --- !u!114 &9068882288674124436
 MonoBehaviour:
   m_ObjectHideFlags: 0
