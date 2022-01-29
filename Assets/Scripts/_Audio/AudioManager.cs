@@ -16,6 +16,8 @@ public class AudioManager : MonoBehaviour
     private EventDescription bgmDescription;
     PLAYBACK_STATE playbackState;
     [SerializeField] private float OneShotTimer;
+    private bool releaseIsOn;
+
 
     public static AudioManager instance;
     private void Awake()
@@ -47,15 +49,15 @@ public class AudioManager : MonoBehaviour
     }
     public void ReleaseOneShot(EventInstance instance)
     {
-        if(PlaybackState(instance) != PLAYBACK_STATE.PLAYING)
+        if(PlaybackState(instance) != PLAYBACK_STATE.PLAYING && !releaseIsOn)
         {
-            ReleaseOneShot(instance);
+            instance.release();
+            releaseIsOn = true;
         }
     }
     public EventInstance PlayOneShot(string path, string parameterName, float parameterValue, Vector3 position = new Vector3())
     {
         var instance = RuntimeManager.CreateInstance(path);
-        StartCoroutine(ReleaseOneShotSource(instance));
         instance.set3DAttributes(RuntimeUtils.To3DAttributes(position));
         instance.setParameterByName(parameterName, parameterValue);
         instance.start();
@@ -68,7 +70,8 @@ public class AudioManager : MonoBehaviour
     }
     public IEnumerator ReleaseOneShotSource(EventInstance evInstance)
     {
-        yield return new WaitForSeconds(3);
+        releaseIsOn = true;
+        yield return new WaitForSeconds(10);
         if (PlaybackState(evInstance) != PLAYBACK_STATE.PLAYING)
         ReleaseOneShot(evInstance);
     }
