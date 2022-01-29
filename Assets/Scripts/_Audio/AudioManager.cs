@@ -43,10 +43,7 @@ public class AudioManager : MonoBehaviour
         PlayBGM();
         InvokeRepeating("IncreaseIntensity", 0 ,bgmIntensityRate);
     }
-    private void Update()
-    {
-        SetIntensity();
-    }
+
     public void ReleaseOneShot(EventInstance instance)
     {
         if(PlaybackState(instance) != PLAYBACK_STATE.PLAYING && !releaseIsOn)
