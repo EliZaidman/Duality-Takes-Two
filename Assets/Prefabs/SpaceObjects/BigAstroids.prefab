@@ -179,6 +179,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 148208984384242360}
     m_Modifications:
+    - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd954dae80d21044cbf4e67789a428b1, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: DoubleLightnedMeteor
@@ -250,6 +254,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 148208984384242360}
     m_Modifications:
+    - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd954dae80d21044cbf4e67789a428b1, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: ShadowMeteor (1)
@@ -321,6 +329,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 148208984384242360}
     m_Modifications:
+    - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd954dae80d21044cbf4e67789a428b1, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: DoubleShadowMeteor
@@ -392,6 +404,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 148208984384242360}
     m_Modifications:
+    - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd954dae80d21044cbf4e67789a428b1, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: DefaultMeteor
@@ -463,6 +479,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 148208984384242360}
     m_Modifications:
+    - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bd954dae80d21044cbf4e67789a428b1, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: LightnedMeteor
