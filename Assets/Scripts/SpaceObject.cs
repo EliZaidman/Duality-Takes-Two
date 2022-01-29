@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FMOD;
-using UnityEngine;
+using UnityEngine.Events;
 public class SpaceObjHitProperties
 {
     public string name;
@@ -11,21 +11,28 @@ public class SpaceObjHitProperties
 }
 public class SpaceObject : MonoBehaviour
 {
-    [SerializeField] 
-    private GameObject darknessObj , doubleDarknessObj, lightObj, doubleLightObj, defaultGameObj;
+  
+
     [SerializeField] 
     private LightCheck lightCheck;
     public SFXClass objStateSfx;
     public SFXClass collisionSfx;
-    private SpaceObjHitProperties hitProperties = new SpaceObjHitProperties();
+    internal SpaceObjHitProperties hitProperties = new SpaceObjHitProperties();
     [SerializeField]
     private StateProperties[] stateProperties;
 
+    public UnityEvent OnBreak;
+    public UnityEvent OnConsumed;
+
+    public void DestroyObject()
+    {
+        Destroy(this);
+    }
     private void OnValidate()
     {
         foreach(StateProperties found in stateProperties)
         {
-           
+           if(found!=null)
             found.stateName = found.lightCondition.ToString();
 
         }
@@ -36,10 +43,11 @@ public class SpaceObject : MonoBehaviour
         objStateSfx = AudioManager.instance.SfxList.Find(name => name.sfxName == gameObject.name);
         collisionSfx = AudioManager.instance.SfxList.Find(name => name.sfxName == "col"+gameObject.name);
     }
-
+    
     public void LightCheckTrigger()
     {
         StateProperties state = SetObjState(lightCheck.lightConditions);
+        hitProperties.ModularParamsInit(state.doHitPlayer, state.colState);
         if (objStateSfx != null)
         AudioManager.PlayOneShot(objStateSfx.path, AudioManager.LIGHT_DARK_PARAM_NAME, state.stateFmodParamValue, transform.position);
    
@@ -49,12 +57,18 @@ public class SpaceObject : MonoBehaviour
         StateProperties value = new StateProperties();
         foreach (var state in stateProperties)
         {
-            if (state.lightCondition == lightCondition)
+            if (state.lightCondition != lightCondition)
+            {
+                state.obj.SetActive(false);
+            
+            }
+            else 
             {
                 value = state;
+
                 state.obj.SetActive(true);
             }
-            else state.obj.SetActive(false);
+            
         }
         return value;
     }

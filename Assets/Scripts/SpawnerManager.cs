@@ -39,30 +39,31 @@ public class SpawnerManager : MonoBehaviour
     private RectTransform _rTr;
 
     [SerializeField]
-    public List<GameObject> DebrisInScene = new List<GameObject>();
+    public List<GameObject> EnemiesInScene = new List<GameObject>();
 
     [SerializeField]
-    public float _timeBetweenSpawns = 0;
+    public Vector2 _timeBetweenSpawnsRange;
 
-    [SerializeField]
-    public int _maxSpawns;
+  
 
     //public AudioClip[] randomSpawnSounds;
 
     #endregion
 
     #region Public Fields
-    public float _currentTimeBetweenSpawns;
+    private float _currentTimeBetweenSpawns;
     #endregion
 
     #region Unity Callbacks
     private void Awake()
     {
-        _currentTimeBetweenSpawns = _timeBetweenSpawns;
-        _maxSpawns = _Level;
-        //_idCycler = 0;
+        _currentTimeBetweenSpawns = GetRandomSpawnRange();
+  
     }
-
+    private float GetRandomSpawnRange()
+    {
+        return Random.Range(_timeBetweenSpawnsRange.x, _timeBetweenSpawnsRange.y);
+    }
     private void Update()
     {
         GameObject selectedSpawner = _spawners[Random.Range(0, 6)];
@@ -79,21 +80,13 @@ public class SpawnerManager : MonoBehaviour
 
         if (GameManager.Instance.IsWaveOngoing)
         {
-            //int enemyIndex = Mathf.FloorToInt(GameManager.Instance.Level / 10);
 
-            //if (enemyIndex > 0 && enemyIndex < 2)
-            //    _enemy = _allEnemies[1];
-
-            //else if (enemyIndex >= 2)
-            //    _enemy = _allEnemies[2];
-
-            if (_currentTimeBetweenSpawns <= 0 && _maxSpawns > 0)
+            if (_currentTimeBetweenSpawns <= 0)
             {
                 GameObject newEnemy = Instantiate(_allEnemies[Random.Range(0,_allEnemies.Count)], (Vector2)_spawners[Random.Range(0, 6)].transform.position /*+ randomPosInsideSpawner*/, Quaternion.identity);
-                //AudioManager.Instance.RandomSoundEffect(randomSpawnSounds);
-                DebrisInScene.Add(newEnemy);
-                _currentTimeBetweenSpawns = _timeBetweenSpawns;
-                _maxSpawns--;
+
+                EnemiesInScene.Add(newEnemy);
+                _currentTimeBetweenSpawns = GetRandomSpawnRange();
             }
 
             else
