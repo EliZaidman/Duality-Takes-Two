@@ -58,7 +58,7 @@ public class SpawnerManager : MonoBehaviour
     private void Awake()
     {
         _currentTimeBetweenSpawns = GetRandomSpawnRange();
-        Invoke("changeRate",90);
+  
     }
     private float GetRandomSpawnRange()
     {
@@ -96,11 +96,6 @@ public class SpawnerManager : MonoBehaviour
             }
         }
         
-    }
-
-    public void changeRate()
-    {
-        _timeBetweenSpawnsRange.x = 1;
     }
     #endregion
 }

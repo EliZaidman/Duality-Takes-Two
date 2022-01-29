@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMOD.Studio;
 using FMODUnity;
-using UnityEngine.UI;
-
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] public List<SFXClass> SfxList = new List<SFXClass>();
@@ -19,20 +17,15 @@ public class AudioManager : MonoBehaviour
     PLAYBACK_STATE playbackState;
     [SerializeField] private float OneShotTimer;
     private bool releaseIsOn;
-    public Bus masterBus;
-    public float masterVol;
-    Slider slider;
+
 
 
     public static AudioManager instance;
     private void Awake()
     {
-        masterBus = RuntimeManager.GetBus("bus:/");
         bgmIntensity = 0;
         instance = this;
         bgmEvent = RuntimeManager.CreateInstance(bgmRef);
-        masterBus.setVolume(masterVol);
-        
     }
     PLAYBACK_STATE PlaybackState(EventInstance instance)
     {
@@ -118,9 +111,4 @@ public class AudioManager : MonoBehaviour
     public void PlayStartUI() => RuntimeManager.PlayOneShot("event:/uiStartGame", transform.position);
 
     public void WhooshUI() => RuntimeManager.PlayOneShot("event:/uiWhoosh", transform.position);
-
-    public void SetVolume()
-    {
-        masterBus.setVolume(slider.value); 
-    }
 }

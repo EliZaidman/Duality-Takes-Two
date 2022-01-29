@@ -1,27 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9213770153779550979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-9208567537901177333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,29 +66,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-9104081604614469526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-9103304857058398020
+--- !u!114 &-9057272285565513027
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,6 +110,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-9023728236601360341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/colChicken/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-8907314481864596868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,28 +176,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-8872096439648593001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-8818826486447317083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +198,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-8817523062977143624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/satallite/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-8728053599231721567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +240,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -860365296451958923}
+  - {fileID: 3055025802122588939}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -288,28 +266,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &-8684268954741152967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-8680533107751884984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +421,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 178269
+--- !u!114 &-8533647989149463701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-8503849257424324475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,28 +466,6 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 1
 --- !u!114 &-8499433953109574179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-8482182817864634007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -597,28 +553,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-8286631525652263025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &-8273495652150699296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,28 +575,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-8260260504572722610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &-8199582253129561264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,50 +597,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-8161664247609905751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-8150378558150847510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-8133477828248798654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,28 +612,6 @@ MonoBehaviour:
   Name: LightDark
   Min: 0
   Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-8124059351094636857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
   Default: 0
   ID:
     data1: 0
@@ -839,6 +685,94 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-8079733727232825714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/smallAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &-8060574395518416422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bigAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-7995063532143292135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-7993503970557633977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/chicken/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-7967896744217472540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,50 +905,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &-7806202219817004284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-7799990484743191506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-7737412872012325871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,28 +916,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-7736103689880911416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -1123,7 +991,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -2411157548421266369}
+  - {fileID: -7993503970557633977}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1193,6 +1061,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-7346417548784660093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/satallite/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-7330185785467649612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1215,7 +1105,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-7328243286847985725
+--- !u!114 &-7289436301836640160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-7267184218740761394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1237,28 +1149,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-7269071166275776476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &-7220219629370388407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,7 +1171,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-7212988288028884721
+--- !u!114 &-7139638661918662607
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1291,11 +1181,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
+  m_Name: parameter:/smallAsteroid/LightDark
   m_EditorClassIdentifier: 
-  Name: Intensity
+  Name: LightDark
   Min: 0
-  Max: 5
+  Max: 3
   Default: 0
   ID:
     data1: 0
@@ -1336,28 +1226,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-6969453505037834344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -1545,28 +1413,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-6560475152389750354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-6496804306004155124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1721,6 +1567,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-6290720043652563953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/colChicken/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-6250665571333140942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1853,7 +1721,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-6158618117935397464
+--- !u!114 &-6174382485080065154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1863,11 +1731,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
+  m_Name: parameter:/bgm/Intensity
   m_EditorClassIdentifier: 
-  Name: LightDark
+  Name: Intensity
   Min: 0
-  Max: 3
+  Max: 5
   Default: 0
   ID:
     data1: 0
@@ -2073,28 +1941,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-5610297456251400705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &-5583788701313455249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2315,7 +2161,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-5386253140918788744
+--- !u!114 &-5170704258785622670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2336,8 +2182,8 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
-  Exists: 1
---- !u!114 &-5321107809445771341
+  Exists: 0
+--- !u!114 &-5121705578389781089
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2347,7 +2193,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
+  m_Name: parameter:/bigAsteroid/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -2359,7 +2205,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-5115027498575688990
+--- !u!114 &-5113696972387592316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2369,33 +2215,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
+  m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
   Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
---- !u!114 &-5077019892951337630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
   Default: 0
   ID:
     data1: 0
@@ -2469,28 +2293,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &-4941442310844328194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-4875949623637569914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2547,50 +2349,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-4786616428413317178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-4750758874597550387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -2877,28 +2635,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-4074779154673310806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -3328,28 +3064,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-3443815581816827489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-3440540848849383872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3361,28 +3075,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-3430347766199564975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -3416,7 +3108,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-3420502190324700425
+--- !u!114 &-3404257015440060826
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3426,7 +3118,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
+  m_Name: parameter:/satallite/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-3370967355361439567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bigAsteroid/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -3458,32 +3172,10 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 5891642685905722349}
+  - {fileID: -8817523062977143624}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-3360737907808885675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-3318389457925569197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3517,50 +3209,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-3143734810758076009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-3130559127272982188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -3638,50 +3286,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &-3021325809154488453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-3014604130359050809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-2955448217082441743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3836,7 +3440,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-2708389018495448941
+--- !u!114 &-2670387984162035306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3846,11 +3450,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
+  m_Name: parameter:/colChicken/LightDark
   m_EditorClassIdentifier: 
-  Name: Intensity
+  Name: LightDark
   Min: 0
-  Max: 5
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-2669632486542550025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bigAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
   Default: 0
   ID:
     data1: 0
@@ -3881,28 +3507,6 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-2595494396984802831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-2553659170281497965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4034,28 +3638,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-2411157548421266369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &-2370728802913367885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4122,29 +3704,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-2351259710654009254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
---- !u!114 &-2296214490193622503
+--- !u!114 &-2339173717722138233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4155,28 +3715,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-2291781220515837272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -4210,7 +3748,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-2256107139243637791
+--- !u!114 &-2257669517267378360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4220,7 +3758,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
+  m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -4232,7 +3770,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-2255438332472663315
+--- !u!114 &-2256107139243637791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4242,7 +3780,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
+  m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -4276,28 +3814,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-2153873331742208226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &-2090922594528282347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4320,50 +3836,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-2090273346174744214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-2048034328519737857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-2036554020051536541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4375,28 +3847,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-2027424870326886051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -4431,28 +3881,6 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &-1987160970735368976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-1980737306200962242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4518,72 +3946,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-1791214678016982728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-1681825651421898964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-1670276768446929788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &-1669475114503906226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4650,7 +4012,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-1609534484575617343
+--- !u!114 &-1627522567718288265
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4671,7 +4033,7 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
-  Exists: 0
+  Exists: 1
 --- !u!114 &-1379117837540221561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4694,50 +4056,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &-1368163486381750267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-1332310492013608951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-1213288110774844767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4760,7 +4078,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-1188337326586019022
+--- !u!114 &-1204483189614523157
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4770,33 +4088,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
+  m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
   Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-1180288480842737561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
   Default: 0
   ID:
     data1: 0
@@ -4870,6 +4166,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-1094819049885079190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/smallAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-1070703526038756455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4892,7 +4210,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-943171259633287487
+--- !u!114 &-1007067147676588966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4902,7 +4220,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
+  m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -4936,7 +4254,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-860365296451958923
+--- !u!114 &-823265461963299981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4946,18 +4264,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
+  m_Name: parameter:/bgm/Intensity
   m_EditorClassIdentifier: 
-  Name: LightDark
+  Name: Intensity
   Min: 0
-  Max: 3
+  Max: 5
   Default: 0
   ID:
     data1: 0
     data2: 0
   Type: 1
   IsGlobal: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-817725116620393750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5068,28 +4386,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &-607950452888276502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-534072254397514717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5149,6 +4445,28 @@ MonoBehaviour:
   Name: LightDark
   Min: 0
   Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-511292099348243517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 5
   Default: 0
   ID:
     data1: 0
@@ -5266,28 +4584,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-405188940646442007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-400787072815548371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5332,28 +4628,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &-311176442569755643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &-301722489904703706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5387,6 +4661,28 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/bigAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-261937965650958944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -5442,6 +4738,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-211431418624965126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/colChicken/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-189515494095819810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5464,72 +4782,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &-166104112609210727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-139239256184622511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &-137309852570742287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &-129782286140413252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5589,7 +4841,7 @@ MonoBehaviour:
   Path: Assets/Audio/fmod/valentina/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637790699568226055
+  lastModified: 637790726294507104
   FileSizes:
   - Name: Desktop
     Value: 1468
@@ -5715,7 +4967,7 @@ MonoBehaviour:
   - {fileID: 8650181576416627402}
   StringsBanks:
   - {fileID: -117603889211407839}
-  stringsBankWriteTime: 637790699568226055
+  stringsBankWriteTime: 637790726294507104
   cacheVersion: 8
 --- !u!114 &10286797397906916
 MonoBehaviour:
@@ -5762,28 +5014,6 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &43836376373445122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &68249939974096810
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6003,28 +5233,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &461663557136442477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &483103687461465292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6091,6 +5299,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+--- !u!114 &591459655893916993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bigAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &593338796168709749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6106,28 +5336,6 @@ MonoBehaviour:
   Name: Intensity
   Min: 0
   Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
---- !u!114 &597724070273762065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
   Default: 0
   ID:
     data1: 0
@@ -6180,28 +5388,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &707035003189323150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &722666701355476707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6224,7 +5410,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &733726879228442550
+--- !u!114 &744433740816655968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6234,29 +5420,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &798169432465533670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
+  m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -6290,50 +5454,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &871211864980943901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &914676458068608327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &919491393527715911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6356,6 +5476,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+--- !u!114 &925239296135033724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bigAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &969830495538704890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6378,28 +5520,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &993306239845654189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &993953301664966394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6466,28 +5586,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &1069685853740928467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &1086035849965654066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6510,6 +5608,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+--- !u!114 &1148923326294726968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/satallite/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &1191868950985729907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6532,7 +5652,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &1200775097117147587
+--- !u!114 &1198640808601569311
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6542,7 +5662,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
+  m_Name: parameter:/bigAsteroid/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -6554,7 +5674,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &1212448046930525192
+--- !u!114 &1200775097117147587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6564,7 +5684,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
+  m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -6620,6 +5740,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &1315586305701275376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &1320356329928300424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6635,28 +5777,6 @@ MonoBehaviour:
   Name: LightDark
   Min: 0
   Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &1384391774410150550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
   Default: 0
   ID:
     data1: 0
@@ -6708,28 +5828,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &1451145996157139749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &1496878758018764816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6789,28 +5887,6 @@ MonoBehaviour:
   Name: LightDark
   Min: 0
   Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &1553554784986116530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
   Default: 0
   ID:
     data1: 0
@@ -6884,7 +5960,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &1715210153102463236
+--- !u!114 &1729896644809338488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6894,18 +5970,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
+  m_Name: parameter:/smallAsteroid/LightDark
   m_EditorClassIdentifier: 
-  Name: Intensity
+  Name: LightDark
   Min: 0
-  Max: 5
+  Max: 3
   Default: 0
   ID:
     data1: 0
     data2: 0
   Type: 1
   IsGlobal: 0
-  Exists: 0
+  Exists: 1
 --- !u!114 &1751145405365773940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6928,7 +6004,73 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &1766665320455421228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &1779122427186475564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bgm/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &1799934270729021785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/colChicken/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &1814284617747184494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7016,7 +6158,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &2011728396148697935
+--- !u!114 &2031705586130726268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7026,7 +6168,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
+  m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -7037,7 +6179,7 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &2071859642696991332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7102,7 +6244,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -5115027498575688990}
+  - {fileID: -9023728236601360341}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -7304,28 +6446,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &2547441982723503767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &2638861646427932977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7368,7 +6488,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -1670276768446929788}
+  - {fileID: -6174382485080065154}
   MinDistance: 0
   MaxDistance: 0
   Length: 337761
@@ -7409,28 +6529,6 @@ MonoBehaviour:
   Name: Intensity
   Min: 0
   Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
---- !u!114 &2779578620453250459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
   Default: 0
   ID:
     data1: 0
@@ -7592,6 +6690,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3055025802122588939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bigAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &3137263454036896099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7614,50 +6734,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &3143336566197095779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &3160834693342363126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &3170420190189126381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7669,28 +6745,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &3191558142833747078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -7724,28 +6778,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &3317626754916979890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &3319360321140243113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7944,28 +6976,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &3729083581452399941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &3732879649641258337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8025,50 +7035,6 @@ MonoBehaviour:
   Name: LightDark
   Min: 0
   Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &3916185747785625475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &3917250427478139527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
   Default: 0
   ID:
     data1: 0
@@ -8143,7 +7109,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &4082305132452717709
+--- !u!114 &4006370457713169675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8164,74 +7130,8 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
-  Exists: 1
---- !u!114 &4099653474657428922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
---- !u!114 &4113746520630484848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
---- !u!114 &4184441206346760873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
   Exists: 0
---- !u!114 &4262315856335685130
+--- !u!114 &4172433000437634635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8241,29 +7141,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &4325639878697649309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
+  m_Name: parameter:/colChicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -8275,29 +7153,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &4365871924048768564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &4375290795416912839
+--- !u!114 &4227494697964364905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8407,28 +7263,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &4686229680924059467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &4704946978523820435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8451,6 +7285,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &4776691635568503449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/satallite/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &4865242166324273750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8466,50 +7322,6 @@ MonoBehaviour:
   Name: Intensity
   Min: 0
   Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &4867726001460800835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &4877504645438318764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
   Default: 0
   ID:
     data1: 0
@@ -8554,28 +7366,6 @@ MonoBehaviour:
   Name: Intensity
   Min: 0
   Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &5056486732774217906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
   Default: 0
   ID:
     data1: 0
@@ -8638,6 +7428,28 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/colChicken/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &5119829108483801136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -8845,7 +7657,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8286631525652263025}
+  - {fileID: -8079733727232825714}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -8893,28 +7705,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
---- !u!114 &5753918745099471851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &5768893603838083248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8926,50 +7716,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &5788863567596217253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &5808119812281867506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -9025,28 +7771,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &5891642685905722349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &5914277476413009915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9058,28 +7782,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &5973524672210652813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -9179,28 +7881,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &6163747943500840051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &6168332221434151176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9246,6 +7926,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+--- !u!114 &6318633991687764691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bigAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &6382632494926083144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9279,6 +7981,28 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/satallite/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &6535568482976383644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/smallAsteroid/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -9356,50 +8080,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &6569564747900006174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &6593046917364156244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &6716628220354252379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9466,28 +8146,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &6832968540824236961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &6887612491458347689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9510,7 +8168,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &6898152905910990394
+--- !u!114 &7024675145837420611
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9520,29 +8178,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &6995099225795742907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
+  m_Name: parameter:/bigAsteroid/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -9708,28 +8344,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &7196070358413270030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &7222710634737896200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9774,28 +8388,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &7364305579640072244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &7390638228013183762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9840,28 +8432,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &7397862396465034901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &7416901518755595567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9884,7 +8454,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &7491314203168594376
+--- !u!114 &7453340899976130945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9950,7 +8520,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &7641185126382663278
+--- !u!114 &7680535976877916121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9960,7 +8530,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/satallite/LightDark
+  m_Name: parameter:/colChicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -9994,7 +8564,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &7711587671062066002
+--- !u!114 &7697284208730894115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10016,7 +8586,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &7731868103099289756
+--- !u!114 &7711587671062066002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10026,7 +8596,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/chicken/LightDark
+  m_Name: parameter:/smallAsteroid/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -10060,7 +8630,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &7785310363674274677
+--- !u!114 &7798041729172792225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10070,11 +8640,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
+  m_Name: parameter:/smallAsteroid/LightDark
   m_EditorClassIdentifier: 
-  Name: Intensity
+  Name: LightDark
   Min: 0
-  Max: 5
+  Max: 3
   Default: 0
   ID:
     data1: 0
@@ -10104,28 +8674,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &7854791424539320936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/colChicken/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 1
 --- !u!114 &7868836525838762464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10207,6 +8755,28 @@ MonoBehaviour:
   Name: Intensity
   Min: 0
   Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &7953885388356168957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/smallAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
   Default: 0
   ID:
     data1: 0
@@ -10302,7 +8872,7 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &8170236474057034579
+--- !u!114 &8192238315209210139
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10312,11 +8882,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
+  m_Name: parameter:/bgm/Intensity
   m_EditorClassIdentifier: 
-  Name: LightDark
+  Name: Intensity
   Min: 0
-  Max: 3
+  Max: 5
   Default: 0
   ID:
     data1: 0
@@ -10522,28 +9092,6 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
---- !u!114 &8471028430824575492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/smallAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &8512879868679402965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10567,7 +9115,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &8515331246189945641
+--- !u!114 &8577660315910629541
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10577,29 +9125,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
-  m_EditorClassIdentifier: 
-  Name: LightDark
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
---- !u!114 &8551634284993915034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bigAsteroid/LightDark
+  m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -10670,33 +9196,11 @@ MonoBehaviour:
   Path: Assets/Audio/fmod/valentina/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637790699568156256
+  lastModified: 637790727057557644
   FileSizes:
   - Name: Desktop
     Value: 4737504
   Exists: 1
---- !u!114 &8675869864210526367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bgm/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  Min: 0
-  Max: 5
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 0
-  Exists: 0
 --- !u!114 &8783525586641262611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10708,6 +9212,28 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/bigAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &8841856187174718003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/chicken/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0
@@ -10774,6 +9300,28 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/smallAsteroid/LightDark
+  m_EditorClassIdentifier: 
+  Name: LightDark
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &9205777253396031618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/satallite/LightDark
   m_EditorClassIdentifier: 
   Name: LightDark
   Min: 0

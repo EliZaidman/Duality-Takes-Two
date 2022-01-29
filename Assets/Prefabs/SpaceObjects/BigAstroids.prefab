@@ -89,19 +89,7 @@ MonoBehaviour:
     colState: 1
   OnBreak:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 148208984384242343}
-        m_TargetAssemblyTypeName: SpaceObject, Assembly-CSharp
-        m_MethodName: exploide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnConsumed:
     m_PersistentCalls:
       m_Calls:
@@ -117,7 +105,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  PFToInstantiat: {fileID: 997777169837906343, guid: 495dccbd0d1c6f94083cc098558ca06e, type: 3}
 --- !u!114 &3857335633980886836
 MonoBehaviour:
   m_ObjectHideFlags: 0

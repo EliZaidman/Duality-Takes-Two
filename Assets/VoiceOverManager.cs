@@ -19,23 +19,15 @@ public class VoiceOverManager : MonoBehaviour
     }
     public void PlayNextVoice()
     {
-        if (seqIndex < sequence.Length)
+        seqIndex++;
+        if (source.isPlaying)
         {
-
-            seqIndex++;
-            if (source.isPlaying)
-            {
-                source.Stop();
-                source.clip = sequence[seqIndex];
-                source.Play();
-            }
-            else
-            {
-                source.clip = sequence[seqIndex];
-                source.Play();
-            }
-
+            source.Stop();
+            source.clip = sequence[seqIndex];
+            source.Play();
         }
+        else source.Play();
+
     }
 
     public void StartPlaying() => source.Play();
