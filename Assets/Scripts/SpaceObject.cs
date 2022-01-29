@@ -14,7 +14,7 @@ public class SpaceObject : MonoBehaviour
   
 
     [SerializeField] 
-    private LightCheck lightCheck;
+    public LightCheck lightCheck;
     public SFXClass objStateSfx;
     public SFXClass collisionSfx;
     internal SpaceObjHitProperties hitProperties = new SpaceObjHitProperties();

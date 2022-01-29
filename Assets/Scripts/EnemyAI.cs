@@ -28,8 +28,6 @@ public class EnemyAI : MonoBehaviour
     {
         if (ispushedFromLight)
         {
-
-
             if (_lightCheck.lightConditions == LightCheck.LightConditions.light || _lightCheck.lightConditions == LightCheck.LightConditions.doubleLight)
             {
                 moveAway();
@@ -58,10 +56,11 @@ public class EnemyAI : MonoBehaviour
 
     private void moveAway()
     {
-        Vector3 directionToMoveAway = _lightCheck.FindVectorPos();
+    //    Vector3 directionToMoveAway = _lightCheck.FindVectorPos();
 
-        directionToMoveAway = directionToMoveAway.normalized * Time.deltaTime * lightPushmoveSpeed;
+    //    directionToMoveAway = directionToMoveAway.normalized * Time.deltaTime * lightPushmoveSpeed;
+    //    directionToMoveAway.z = 0;
 
-        transform.Translate(directionToMoveAway);
+        transform.Translate(transform.right*-1*Time.deltaTime*lightPushmoveSpeed);
     }
 }

@@ -4,72 +4,149 @@ using UnityEngine;
 
 public class CollisionPass : MonoBehaviour
 {
+    List<GameObject> intersectingObjects=new List<GameObject>();
     LightCheck light;
+
+    public bool NotChangeAbleAfterLight;
+    bool isstuckOnState = false;
     void Start()
     {
         light= GetComponentInParent<LightCheck>();
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collision)
     {
-
-
-        if (other.gameObject.tag == "TopShadow")
-        {
-            light.topShadow = other.gameObject;
-            light.darkMeshList.Add(other.gameObject);
+        if (isstuckOnState) return;
+        if (collision.gameObject.tag == "TopShadow")
+            {
+                light.topShadow = collision.gameObject;
+                light.darkMeshList.Add(collision.gameObject);
+                light.Sync();
+            }
+            if (collision.gameObject.tag == "SideShadow")
+            {
+                light.SideShadow = collision.gameObject;
+                //Debug.Log("Inside Light");
+                light.darkMeshList.Add(collision.gameObject);
+                light.Sync();
+            }
+            if (collision.gameObject.tag == "TopLight")
+            {
+                light.topLight = collision.gameObject;
+                light.lightMeshList.Add(collision.gameObject);
+            if (NotChangeAbleAfterLight)
+            {
+                isstuckOnState = true;
+            }
             light.Sync();
-        }
-        if (other.gameObject.tag == "SideShadow")
+            }
+        if (collision.gameObject.tag == "SideLight")
         {
-            light.SideShadow = other.gameObject;
+            light.SideLight = collision.gameObject;
             //Debug.Log("Inside Light");
-            light.darkMeshList.Add(other.gameObject);
+            light.lightMeshList.Add(collision.gameObject);
+            if (NotChangeAbleAfterLight)
+            {
+                isstuckOnState = true;
+            }
             light.Sync();
         }
-        if (other.gameObject.tag == "TopLight")
-        {
-            light.topLight = other.gameObject;
-            light.lightMeshList.Add(other.gameObject);
+        
 
-            light.Sync();
-        }
-        if (other.gameObject.tag == "SideLight")
-        {
-            light.SideLight = other.gameObject;
-            //Debug.Log("Inside Light");
-            light.lightMeshList.Add(other.gameObject);
-            light.Sync();
-        }
     }
-
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider collision)
     {
-        if (other.gameObject.tag == "TopShadow")
+        if (isstuckOnState) return;
+        if (collision.gameObject.tag == "TopShadow")
         {
             light.topShadow = null;
-            light.darkMeshList.Remove(other.gameObject.GetComponent<GameObject>());
+            light.darkMeshList.Remove(collision.gameObject.GetComponent<GameObject>());
             light.Sync();
         }
-        if (other.gameObject.tag == "SideShadow")
+        if (collision.gameObject.tag == "SideShadow")
         {
             light.SideShadow = null;
             //Debug.Log("Inside Light");
-            light.darkMeshList.Remove(other.gameObject.GetComponent<GameObject>());
+            light.darkMeshList.Remove(collision.gameObject.GetComponent<GameObject>());
             light.Sync();
         }
-        if (other.gameObject.tag == "TopLight")
+        if (collision.gameObject.tag == "TopLight")
         {
             light.topLight = null;
-            light.lightMeshList.Remove(other.gameObject.GetComponent<GameObject>());
+            light.lightMeshList.Remove(collision.gameObject.GetComponent<GameObject>());
             light.Sync();
         }
-        if (other.gameObject.tag == "SideLight")
+        if (collision.gameObject.tag == "SideLight")
         {
             light.SideLight = null;
             //Debug.Log("Inside Light");
-            light.lightMeshList.Remove(other.gameObject.GetComponent<GameObject>());
+            light.lightMeshList.Remove(collision.gameObject.GetComponent<GameObject>());
             light.Sync();
         }
     }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (!light.lightMeshList.Contains(collision.gameObject) && !light.darkMeshList.Contains(collision.gameObject))
+    //    {
+
+    //        if (collision.gameObject.tag == "TopShadow")
+    //        {
+    //            light.topShadow = collision.gameObject;
+    //            light.darkMeshList.Add(collision.gameObject);
+    //            light.Sync();
+    //        }
+    //        if (collision.gameObject.tag == "SideShadow")
+    //        {
+    //            light.SideShadow = collision.gameObject;
+    //            //Debug.Log("Inside Light");
+    //            light.darkMeshList.Add(collision.gameObject);
+    //            light.Sync();
+    //        }
+    //        if (collision.gameObject.tag == "TopLight")
+    //        {
+    //            light.topLight = collision.gameObject;
+    //            light.lightMeshList.Add(collision.gameObject);
+
+    //            light.Sync();
+    //        }
+    //        if (collision.gameObject.tag == "SideLight")
+    //        {
+    //            light.SideLight = collision.gameObject;
+    //            //Debug.Log("Inside Light");
+    //            light.lightMeshList.Add(collision.gameObject);
+    //            light.Sync();
+    //        }
+    //    }
+        
+    //}
+    //private void OnCollisionExit(Collision collision)
+    //{
+        
+    //    if (collision.gameObject.tag == "TopShadow")
+    //    {
+    //        light.topShadow = null;
+    //        light.darkMeshList.Remove(collision.gameObject.GetComponent<GameObject>());
+    //        light.Sync();
+    //    }
+    //    if (collision.gameObject.tag == "SideShadow")
+    //    {
+    //        light.SideShadow = null;
+    //        //Debug.Log("Inside Light");
+    //        light.darkMeshList.Remove(collision.gameObject.GetComponent<GameObject>());
+    //        light.Sync();
+    //    }
+    //    if (collision.gameObject.tag == "TopLight")
+    //    {
+    //        light.topLight = null;
+    //        light.lightMeshList.Remove(collision.gameObject.GetComponent<GameObject>());
+    //        light.Sync();
+    //    }
+    //    if (collision.gameObject.tag == "SideLight")
+    //    {
+    //        light.SideLight = null;
+    //        //Debug.Log("Inside Light");
+    //        light.lightMeshList.Remove(collision.gameObject.GetComponent<GameObject>());
+    //        light.Sync();
+    //    }
+    //}
+    
 }

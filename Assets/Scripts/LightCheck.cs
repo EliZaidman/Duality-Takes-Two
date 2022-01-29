@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class LightCheck : MonoBehaviour
 {
+
     //#region Singleton
     //private static LightCheck _instance;
     //public static LightCheck Instance
@@ -45,7 +46,7 @@ public class LightCheck : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
+       
 
         if (other.gameObject.tag == "TopShadow")
         {
@@ -62,6 +63,7 @@ public class LightCheck : MonoBehaviour
         }
         if (other.gameObject.tag == "TopLight")
         {
+        
             topLight = other.gameObject;
             lightMeshList.Add(other.gameObject);
 
@@ -69,6 +71,8 @@ public class LightCheck : MonoBehaviour
         }
         if (other.gameObject.tag == "SideLight")
         {
+         
+
             SideLight = other.gameObject;
             //Debug.Log("Inside Light");
             lightMeshList.Add(other.gameObject);
@@ -78,6 +82,8 @@ public class LightCheck : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+      
+
         if (other.gameObject.tag == "TopShadow")
         {
             topShadow = null;
