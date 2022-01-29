@@ -699,7 +699,7 @@
 			<value>152</value>
 		</property>
 		<property name="length">
-			<value>44.042448979591825</value>
+			<value>37.345454357636726</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{4ff4a4a2-f3ee-47e7-8b69-e4b14a0ed5a0}</destination>

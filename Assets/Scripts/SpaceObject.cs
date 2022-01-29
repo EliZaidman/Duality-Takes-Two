@@ -14,13 +14,7 @@ public class SpaceObject : MonoBehaviour
 
     public int Enumvalue = 0;
     [SerializeField] 
-<<<<<<< Updated upstream
     public LightCheck lightCheck;
-=======
-
-    public LightCheck lightCheck;
-
->>>>>>> Stashed changes
     public SFXClass objStateSfx;
     public SFXClass collisionSfx;
     internal SpaceObjHitProperties hitProperties = new SpaceObjHitProperties();
