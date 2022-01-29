@@ -44,10 +44,7 @@ public class AudioManager : MonoBehaviour
         PlayBGM();
         InvokeRepeating("IncreaseIntensity", 0 ,bgmIntensityRate);
     }
-    private void Update()
-    {
-        SetIntensity();
-    }
+
     public void ReleaseOneShot(EventInstance instance)
     {
         if(PlaybackState(instance) != PLAYBACK_STATE.PLAYING && !releaseIsOn)
@@ -94,12 +91,14 @@ public class AudioManager : MonoBehaviour
     {
         bgmEvent.setParameterByName(parameterName, parameterValue, true);
     }
-    private void IncreaseIntensity()
+    public void IncreaseIntensity()
     {
         if(bgmIntensity < 4)
+        {
+            bgmIntensity++;
+        }
         bgmParameterChange(BGM_PARAM_NAME, bgmIntensity);
     }
-    private void SetIntensity() => bgmParameterChange(BGM_PARAM_NAME, bgmIntensity);
 
     public void OnDeath()
     {

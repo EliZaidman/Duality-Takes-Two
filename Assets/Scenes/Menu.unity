@@ -6718,7 +6718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2066016012661925684, guid: e601ed11c355a194e82e11f61b09ec25, type: 3}
       propertyPath: bgmIntensityRate
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2066016012661925685, guid: e601ed11c355a194e82e11f61b09ec25, type: 3}
       propertyPath: m_Name
