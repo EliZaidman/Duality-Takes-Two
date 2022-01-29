@@ -26,7 +26,7 @@ public class SpawnerManager : MonoBehaviour
 
     #region Serialized Fields
     [SerializeField]
-    private List<GameObject> _spawners = new List<GameObject>(4);
+    public List<GameObject> _spawners = new List<GameObject>(4);
 
     [SerializeField]
     private List<GameObject> _allEnemies;
@@ -39,7 +39,7 @@ public class SpawnerManager : MonoBehaviour
     private RectTransform _rTr;
 
     [SerializeField]
-    public List<GameObject> _ZombiesInScene = new List<GameObject>();
+    public List<GameObject> DebrisInScene = new List<GameObject>();
 
     [SerializeField]
     public float _timeBetweenSpawns = 0;
@@ -91,7 +91,7 @@ public class SpawnerManager : MonoBehaviour
             {
                 GameObject newEnemy = Instantiate(_allEnemies[Random.Range(0,_allEnemies.Count)], (Vector2)_spawners[Random.Range(0, 6)].transform.position /*+ randomPosInsideSpawner*/, Quaternion.identity);
                 //AudioManager.Instance.RandomSoundEffect(randomSpawnSounds);
-                _ZombiesInScene.Add(newEnemy);
+                DebrisInScene.Add(newEnemy);
                 _currentTimeBetweenSpawns = _timeBetweenSpawns;
                 _maxSpawns--;
             }

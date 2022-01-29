@@ -19,7 +19,7 @@ public class SpaceObject : MonoBehaviour
     public void LightCheckTrigger()
     {
 
-        objStateSfx = AudioManager.instance.SfxList.Find(name => objStateSfx.sfxName == gameObject.name);
+        //objStateSfx = AudioManager.instance.SfxList.Find(name => objStateSfx.sfxName == gameObject.name);
         switch (lightCheck.lightConditions)
         {
             case LightCheck.LightConditions.darkness:

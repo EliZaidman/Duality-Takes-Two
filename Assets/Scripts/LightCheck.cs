@@ -5,7 +5,24 @@ using UnityEngine.Events;
 
 public class LightCheck : MonoBehaviour
 {
+    //#region Singleton
+    //private static LightCheck _instance;
+    //public static LightCheck Instance
+    //{
+    //    get
+    //    {
+    //        if (_instance == null)
+    //            Debug.Log("LightCheck not loaded properly");
 
+    //        return _instance;
+    //    }
+    //}
+
+    //private LightCheck()
+    //{
+
+    //}
+    //#endregion
     public enum LightConditions
     {
         Default,
@@ -33,31 +50,32 @@ public class LightCheck : MonoBehaviour
         if (other.gameObject.tag == "TopShadow")
         {
             topShadow = other.gameObject;
-            darkMeshList.Add(other.gameObject.GetComponent<GameObject>());
+            darkMeshList.Add(other.gameObject);
             Sync();
         }
         if (other.gameObject.tag == "SideShadow")
         {
-               SideShadow = other.gameObject;
+            SideShadow = other.gameObject;
             //Debug.Log("Inside Light");
-            lightMeshList.Add(other.gameObject.GetComponent<GameObject>());
+            darkMeshList.Add(other.gameObject);
             Sync();
         }
         if (other.gameObject.tag == "TopLight")
         {
             topLight = other.gameObject;
-            darkMeshList.Add(other.gameObject.GetComponent<GameObject>());
+            lightMeshList.Add(other.gameObject);
+
             Sync();
         }
         if (other.gameObject.tag == "SideLight")
         {
             SideLight = other.gameObject;
             //Debug.Log("Inside Light");
-            lightMeshList.Add(other.gameObject.GetComponent<GameObject>());
+            lightMeshList.Add(other.gameObject);
             Sync();
         }
     }
-    
+
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "TopShadow")
@@ -70,13 +88,13 @@ public class LightCheck : MonoBehaviour
         {
             SideShadow = null;
             //Debug.Log("Inside Light");
-            lightMeshList.Remove(other.gameObject.GetComponent<GameObject>());
+            darkMeshList.Remove(other.gameObject.GetComponent<GameObject>());
             Sync();
         }
         if (other.gameObject.tag == "TopLight")
         {
             topLight = null;
-            darkMeshList.Remove(other.gameObject.GetComponent<GameObject>());
+            lightMeshList.Remove(other.gameObject.GetComponent<GameObject>());
             Sync();
         }
         if (other.gameObject.tag == "SideLight")
@@ -107,14 +125,14 @@ public class LightCheck : MonoBehaviour
     private bool isShadowedBySide()
     {
 
-        return  SideShadow;
+        return SideShadow;
     }
     private bool isDefault()
     {
         return (!SideShadow && !topShadow && !SideLight && !topLight);
     }
 
-    private void Sync()
+    public void Sync()
     {
         if (isDefault())
         {
@@ -122,7 +140,7 @@ public class LightCheck : MonoBehaviour
             OnSync.Invoke();
             return;
         }
-    
+
         //LIGHT
         if (isLightedBySide() && isLightedByTop())
         {
@@ -151,7 +169,7 @@ public class LightCheck : MonoBehaviour
         //}
 
         //DARKNESS
-        if (isShadowedBySide()&&isShadowedByTop())
+        if (isShadowedBySide() && isShadowedByTop())
         {
             Debug.Log("DoubleDarkness");
             lightConditions = LightConditions.DoubleDarkness;
@@ -167,8 +185,21 @@ public class LightCheck : MonoBehaviour
             return;
         }
 
-        
 
-        
+
+
+    }
+
+    public Vector3 FindVectorPos()
+    {
+        Vector3 value = Vector3.zero;
+
+        foreach (GameObject found in lightMeshList)
+        {
+            if (found != null)
+            value += found.transform.position - transform.position;
+        }
+
+        return -(value / lightMeshList.Count).normalized;
     }
 }
