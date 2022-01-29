@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-            if (Timer >= 180 && !_hasWon)
+            if (Timer >= timeRemaining && !_hasWon)
             {
                 _hasWon = true;
                 Win();
@@ -133,5 +133,7 @@ public class GameManager : MonoBehaviour
         FindObjectOfType<SpawnerManager>().EnemiesInScene.Clear();
         SceneManager.LoadScene("Menu");
     }
+
+   
     #endregion
 }

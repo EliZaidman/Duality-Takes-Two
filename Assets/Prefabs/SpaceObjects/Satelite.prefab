@@ -89,6 +89,7 @@ MonoBehaviour:
   OnConsumed:
     m_PersistentCalls:
       m_Calls: []
+  PFToInstantiat: {fileID: 0}
 --- !u!114 &3045235186685767391
 MonoBehaviour:
   m_ObjectHideFlags: 0

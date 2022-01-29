@@ -15,7 +15,7 @@ public class AstronautAI : MonoBehaviour
             SpaceObject spaceObject = other.gameObject.GetComponent<SpaceObject>();
 
             OnObstacleCollision(spaceObject);
-        }else if (other.tag == "ObstacleChild")
+        }else if (other.tag == "ObtacleChild")
         {
             SpaceObject spaceObject = other.gameObject.GetComponentInParent<SpaceObject>();
 

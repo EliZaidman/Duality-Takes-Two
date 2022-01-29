@@ -4051,13 +4051,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392485412}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 0.011764706}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4289,11 +4289,11 @@ MonoBehaviour:
   - {fileID: 148208984384242342, guid: 66c634ed8529ff7438c1860357b07325, type: 3}
   - {fileID: 148208984384242342, guid: 5bc463b30fd91fb4da58ab0e0760c410, type: 3}
   - {fileID: 2995696281638607242, guid: 918c6fbcc5960ac4481624d25de05550, type: 3}
-  - {fileID: 2144927695240258381, guid: 2ec9ef2c9ebfddd499a454f5ab0d9c4a, type: 3}
+  - {fileID: 2144927695240258381, guid: f716fef2505c0234e8b9e720cb1bfe96, type: 3}
   _Level: 20
   _enemy: {fileID: 6485435670034423320, guid: fc3285303fabf4846a40060a4379a4c1, type: 3}
   EnemiesInScene: []
-  _timeBetweenSpawnsRange: {x: 1, y: 6}
+  _timeBetweenSpawnsRange: {x: 5, y: 6}
 --- !u!114 &1527179633
 MonoBehaviour:
   m_ObjectHideFlags: 0

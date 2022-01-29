@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4561736330514345651}
   - component: {fileID: 3810298876116692040}
   m_Layer: 6
-  m_Name: SateliteNEW
+  m_Name: Sateliteold
   m_TagString: Obsticle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -24,6 +24,9 @@ public class SpaceObject : MonoBehaviour
     public UnityEvent OnBreak;
     public UnityEvent OnConsumed;
 
+    [SerializeField] private GameObject PFToInstantiat;
+
+
     public void DestroyObject()
     {
         Destroy(this);
@@ -127,6 +130,12 @@ public class SpaceObject : MonoBehaviour
         public SpaceObjHitProperties.CollisionState colState;
         float stateFmodParamValue;        
 
+    }
+
+    public void exploide()
+    {
+        Instantiate(PFToInstantiat, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
   
 }
