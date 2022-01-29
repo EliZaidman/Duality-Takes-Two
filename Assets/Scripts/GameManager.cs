@@ -4,10 +4,14 @@ using UnityEngine;
 using TMPro;
 using UnityEditor;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     #region Singleton
     private static GameManager _instance;
+    public float timeRemaining = 180;
+    public bool timerIsRunning = false;
+    [SerializeField] private TextMeshProUGUI timeText;
     public static GameManager Instance
     {
         get
@@ -21,8 +25,8 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region Serialized Fields
-    [SerializeField]
-    private SpawnerManager _spawnerManager;
+
+    public SpawnerManager _spawnerManager;
 
     //[SerializeField]
     //private TextMeshProUGUI _countDown, _levelText, _nextLevelTxt;
@@ -58,12 +62,26 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        //_levelText.text = Level.ToString("0");
-
         if (IsWaveOngoing)
         {
             Timer += Time.deltaTime;
+
             //_countDown.text = Timer.ToString("0");
+            timerIsRunning = true;
+            if (timerIsRunning)
+            {
+                if (timeRemaining > 0)
+                {
+                    timeRemaining -= Time.deltaTime;
+                    DisplayTime(timeRemaining);
+                }
+                else
+                {
+                    Debug.Log("Time has run out!");
+                    timeRemaining = 0;
+                    timerIsRunning = false;
+                }
+            }
 
             if (Timer >= 180 && !_hasWon)
             {
@@ -72,11 +90,6 @@ public class GameManager : MonoBehaviour
 
             }
         }
-
-
-        TimeSinceLevelStart += Time.deltaTime;
-        //if (IsWaveOngoing == false)
-        //    TimeSinceLevelStart = 0;
     }
     #endregion
 
@@ -100,6 +113,23 @@ public class GameManager : MonoBehaviour
     {
         WinWindow.SetActive(true);
     }
+    void DisplayTime(float timeToDisplay)
+    {
+        timeToDisplay += 1;
 
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+
+        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    //[System.Obsolete]
+    public void ResetGame()
+    {
+        foreach (GameObject enemy in FindObjectOfType<SpawnerManager>().EnemiesInScene)
+            Destroy(enemy);
+        FindObjectOfType<SpawnerManager>().EnemiesInScene.Clear();
+        SceneManager.LoadScene("Menu");
+    }
     #endregion
 }

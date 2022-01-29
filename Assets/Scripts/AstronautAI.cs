@@ -6,13 +6,50 @@ using UnityEngine.Events;
 public class AstronautAI : MonoBehaviour
 {
     [SerializeField] private UnityEvent OnDeath;
+    [SerializeField] private UnityEvent OnConsume;
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Obsticle")
+    private void OnTriggerEnter(Collider other)
+   {
+        if (other.tag == "Obsticle")
         {
-            OnDeath.Invoke();
-            Debug.Log("EnteredIntoInvoke");
+            SpaceObject spaceObject = other.gameObject.GetComponent<SpaceObject>();
+
+            OnObstacleCollision(spaceObject);
+        }else if (other.tag == "ObstacleChild")
+        {
+            SpaceObject spaceObject = other.gameObject.GetComponentInParent<SpaceObject>();
+
+            OnObstacleCollision(spaceObject);
         }
+        
     }
+
+
+    private void OnObstacleCollision(SpaceObject spaceObject)
+    {
+        if (!spaceObject.hitProperties.doHitPlayer) return;
+
+        switch (spaceObject.hitProperties.colState)
+        {
+            case SpaceObject.SpaceObjHitProperties.CollisionState.Hit:
+                var sfx = spaceObject.collisionSfx;
+                AudioManager.instance.PlayOneShot(sfx.path, AudioManager.LIGHT_DARK_LIGHTER_DARKER_PARAM_NAME, spaceObject.Enumvalue);
+                OnDeath.Invoke();
+                break;
+            case SpaceObject.SpaceObjHitProperties.CollisionState.Break:
+                spaceObject.OnBreak.Invoke();
+                break;
+            case SpaceObject.SpaceObjHitProperties.CollisionState.Consumable:
+                OnConsume.Invoke();
+                Destroy(spaceObject.gameObject);
+                break;
+            default:
+                break;
+        }
+
+
+
+    }
+
+
 }
