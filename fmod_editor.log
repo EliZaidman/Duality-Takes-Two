@@ -4,7 +4,761 @@
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[ERR] OutputWASAPI::init                       : IAudioClient::Initialize returned 0x8889000A.
-[LOG] SystemI::close                           : Closed.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 000002414FC2A188 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : done
+[LOG] PlaybackSystem::init                     : 
+[LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] PlaybackSystem::init                     : done
+[LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
+[LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A7AD39EFB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8A26C60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8A26C60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8A26C61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8A26C6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002412364D918
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='uiStartGame', format=5, channels=2, frequency=48000, lengthbytes=35904, lengthpcm=192000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.428375.
+[LOG] SoundI::release                          : ambiance (000002414FB3A778)
+[LOG] SoundI::release                          :     ambiance (000002415043A118)
+[LOG] SoundI::release                          :     ambiance (000002414FB36E18)
+[LOG] SoundI::release                          : ambiance (000002414FB34238)
+[LOG] SoundI::release                          :     ambiance (000002415043C818)
+[LOG] SoundI::release                          :     ambiance (000002414FB380A8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002414FB3F518 : node = 00000240BD0D90B0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002414FB3F518
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D91C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002414FB3F518
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A7AD39EFB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8A26C60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8A26C60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8A26C61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8A26C6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002412A97DCC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='meteorLight', format=5, channels=2, frequency=48000, lengthbytes=59200, lengthpcm=313892, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.426636.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A7AD39EFB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8A26C60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8A26C60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8A26C61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8A26C6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002412A97DCC8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='meteorDark', format=5, channels=2, frequency=48000, lengthbytes=26976, lengthpcm=268983, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.347687.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A7AD39EFB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8A26C60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8A26C60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8A26C61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8A26C6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002412AAF72D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='chickenDark', format=5, channels=2, frequency=48000, lengthbytes=10176, lengthpcm=46644, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.375214.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A7AD39EFB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8A26C60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8A26C60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8A26C61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8A26C6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002412AAF72D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='ChickenLight', format=5, channels=2, frequency=48000, lengthbytes=10720, lengthpcm=44019, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.636017.
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024122EF6C78 : node = 00000240BD0D91F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024122EF6C78
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D9300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024122EF6C78
+[LOG] SoundI::release                          : intensity1 (000002414FB3F518)
+[LOG] SoundI::release                          :     intensity1 (00000240BCFBD958)
+[LOG] SoundI::release                          :     intensity1 (000002414FB3F6C8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000241559101A8 : node = 00000240BD0D96F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000241559101A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D9800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000241559101A8
+[LOG] SoundI::release                          : intensity1 (0000024122EF6C78)
+[LOG] SoundI::release                          :     intensity1 (00000240BCFBD478)
+[LOG] SoundI::release                          :     intensity1 (0000024122EF4908)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D61428 : node = 00000240BD0D90B0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D61428
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D91C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D61428
+[LOG] SoundI::release                          : intensity1 (00000241559101A8)
+[LOG] SoundI::release                          :     intensity1 (0000024155C75E38)
+[LOG] SoundI::release                          :     intensity1 (000002415590FAE8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A7AD39EFB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8A26C60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8A26C60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8A26C61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8A26C6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000024155147068
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='colAsteroids', format=5, channels=2, frequency=48000, lengthbytes=14304, lengthpcm=89172, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.792389.
+[LOG] Thread::initThread                       : Init FMOD profiler thread (recv). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] Thread::initThread                       : Init FMOD profiler thread (send). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] LiveUpdate::clientConnected              : client = 0000024155183C38
+[LOG] LiveUpdate::readPacket                   : Recieved init packet from client 0000024155183C38
+[LOG] LiveUpdate::readPacket                   : Accepting init message for client 0000024155183C38
+[LOG] LiveUpdate::transitionToConnected        : 
+[LOG] Manager::sendConnectTimeHash             : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::acceptInitPacket             : Client 0000024155183C38 connected, entering connected state
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_0.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_0.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_1.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_1.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_2.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_2.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_3.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_3.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_4.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_4.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_5.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_5.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D69618 : node = 00000240BD0D91F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D69618
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D9300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D69618
+[LOG] SoundI::release                          : intensity1 (0000024155D61428)
+[LOG] SoundI::release                          :     intensity1 (0000024150439F78)
+[LOG] SoundI::release                          :     intensity1 (0000024155D64008)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D64F38 : node = 00000240BD0D9330
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D64F38
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024155D63438 : node = 00000240BD0D90B0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D9440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambiance', format=5, channels=2, frequency=48000, lengthbytes=2274144, lengthpcm=8256783, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.570801.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D64F38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D63438
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D91C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambiance', format=5, channels=2, frequency=48000, lengthbytes=2274144, lengthpcm=8256783, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.570801.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D63438
+[LOG] SoundI::release                          : ambiance (0000024155D64F38)
+[LOG] SoundI::release                          :     ambiance (000002415043C4D8)
+[LOG] SoundI::release                          :     ambiance (0000024155D650E8)
+[LOG] SoundI::release                          : ambiance (0000024155D63438)
+[LOG] SoundI::release                          :     ambiance (000002415043CB58)
+[LOG] SoundI::release                          :     ambiance (0000024155D60BB8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D68F58 : node = 00000240BD0D96F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D68F58
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D9800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D68F58
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D6DB48 : node = 00000240BD76EBD0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D6DB48
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD76ECE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D6DB48
+[LOG] SoundI::release                          : intensity1 (0000024155D69618)
+[LOG] SoundI::release                          :     intensity1 (000002415043D1D8)
+[LOG] SoundI::release                          :     intensity1 (0000024155D67608)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D70F98 : node = 00000240BD770C50
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D70F98
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD770D60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D70F98
+[LOG] SoundI::release                          : intensity1 (0000024155D68F58)
+[LOG] SoundI::release                          :     intensity1 (000002415043F0B8)
+[LOG] SoundI::release                          :     intensity1 (0000024155D67E78)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D765A8 : node = 00000240BD0D96F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D765A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D9800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D765A8
+[LOG] SoundI::release                          : intensity1 (0000024155D6DB48)
+[LOG] SoundI::release                          :     intensity1 (000002415043D038)
+[LOG] SoundI::release                          :     intensity1 (0000024155D6F7F8)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_6.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_6.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_7.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_7.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_8.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_8.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_9.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_9.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_10.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_10.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_11.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_11.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_12.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_12.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_13.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_13.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_14.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_14.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_15.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_15.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D6E568 : node = 00000240BD0D90B0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D6E568
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D91C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D6E568
+[LOG] SoundI::release                          : intensity1 (0000024155D70F98)
+[LOG] SoundI::release                          :     intensity1 (000002415043B498)
+[LOG] SoundI::release                          :     intensity1 (0000024155D6D998)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000A7AD39EFB8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF8A26C60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF8A26C60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF8A26C61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF8A26C6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000024155E4A9B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='colChickenDblLight', format=5, channels=2, frequency=48000, lengthbytes=15328, lengthpcm=64581, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_16.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_16.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_17.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_17.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_18.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_18.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_19.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_19.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_20.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_20.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_21.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_21.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D65E68 : node = 00000240B9B40BC0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D65E68
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 0000024155D63438 : node = 00000240B9B40940
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240B9B40CD0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambiance', format=5, channels=2, frequency=48000, lengthbytes=2274144, lengthpcm=8256783, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.570801.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D65E68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D63438
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240B9B40A50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambiance', format=5, channels=2, frequency=48000, lengthbytes=2274144, lengthpcm=8256783, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.570801.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D63438
+[LOG] SoundI::release                          : ambiance (0000024155D65E68)
+[LOG] SoundI::release                          :     ambiance (00000240967FD098)
+[LOG] SoundI::release                          :     ambiance (0000024155D650E8)
+[LOG] SoundI::release                          : ambiance (0000024155D63438)
+[LOG] SoundI::release                          :     ambiance (00000240967FD3D8)
+[LOG] SoundI::release                          :     ambiance (0000024155D60348)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D5FC88 : node = 00000240B9B40D00
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D5FC88
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240B9B40E10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D5FC88
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D73158 : node = 00000240B9B40BC0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D73158
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240B9B40CD0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D73158
+[LOG] SoundI::release                          : intensity1 (0000024155D765A8)
+[LOG] SoundI::release                          :     intensity1 (00000240967FD238)
+[LOG] SoundI::release                          :     intensity1 (0000024155D77EF8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D779E8 : node = 00000240BD0D96F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D779E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D9800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D779E8
+[LOG] SoundI::release                          : intensity1 (0000024155D6E568)
+[LOG] SoundI::release                          :     intensity1 (00000240967FD578)
+[LOG] SoundI::release                          :     intensity1 (0000024155D6DB48)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_22.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_22.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_23.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_23.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_24.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_24.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_25.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_25.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_26.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_26.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_27.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_27.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_28.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_28.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_29.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_29.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_30.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/galaz/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-uStnzi/hotswap_30.bank'
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D6F648 : node = 00000240BD0D90B0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D6F648
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D91C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D6F648
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D72DF8 : node = 00000240BD0D9330
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D72DF8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D9440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D72DF8
+[LOG] SoundI::release                          : intensity1 (0000024155D73158)
+[LOG] SoundI::release                          :     intensity1 (00000240967FD3D8)
+[LOG] SoundI::release                          :     intensity1 (0000024155D6E3B8)
+[LOG] SoundI::release                          : intensity1 (0000024155D5FC88)
+[LOG] SoundI::release                          :     intensity1 (00000240967FD098)
+[LOG] SoundI::release                          :     intensity1 (0000024155D60BB8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D6D488 : node = 00000240BD0D91F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D6D488
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D9300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D6D488
+[LOG] SoundI::release                          : intensity1 (0000024155D779E8)
+[LOG] SoundI::release                          :     intensity1 (00000240967FD238)
+[LOG] SoundI::release                          :     intensity1 (0000024155D76FC8)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D70C38 : node = 00000240BD0D96F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D70C38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000240BD0D9800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D70C38
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D6E208 : node = 0000024094CFAD30
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D6E208
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024094CFAE40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D6E208
+[LOG] SoundI::release                          : intensity1 (0000024155D6F648)
+[LOG] SoundI::release                          :     intensity1 (00000240967FD578)
+[LOG] SoundI::release                          :     intensity1 (0000024155D6DCF8)
+[LOG] SoundI::release                          : intensity1 (0000024155D72DF8)
+[LOG] SoundI::release                          :     intensity1 (000002415595D698)
+[LOG] SoundI::release                          :     intensity1 (0000024155D71808)
+[LOG] SystemI::createSound                     : filename = Assets/Audio/fmod/valentina/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000024155D5D408 : node = 0000024094CFA0B0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000241503B2958.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000024155D5D408
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/Audio/fmod/valentina/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4697664
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 39840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000024094CFA1C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='intensity1', format=5, channels=2, frequency=48000, lengthbytes=215040, lengthpcm=1268924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999908.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000024155D5D408
+[LOG] SoundI::release                          : intensity1 (0000024155D6D488)
+[LOG] SoundI::release                          :     intensity1 (000002415595C998)
+[LOG] SoundI::release                          :     intensity1 (0000024155D71D18)
+[LOG] SoundI::release                          : intensity1 (0000024155D6E208)
+[LOG] SoundI::release                          :     intensity1 (0000024155C764B8)
+[LOG] SoundI::release                          :     intensity1 (0000024155D6E8C8)
+[LOG] SoundI::release                          : intensity1 (0000024155D5D408)
+[LOG] SoundI::release                          :     intensity1 (0000024155C76318)
+[LOG] SoundI::release                          :     intensity1 (00000241559152A8)
+[LOG] SoundI::release                          : intensity1 (0000024155D70C38)
+[LOG] SoundI::release                          :     intensity1 (000002415595D4F8)
+[LOG] SoundI::release                          :     intensity1 (0000024155D6D998)
+[LOG] SoundI::release                          :  (0000024154FCE2E8)
+[LOG] SoundI::release                          :     meteorDark - Trimmed (00000240612FEEF8)
+[LOG] SoundI::release                          :  (0000024154FC9998)
+[LOG] SoundI::release                          :     uiStartGame (00000240612FF098)
+[LOG] SoundI::release                          :  (0000024154FD09B8)
+[LOG] SoundI::release                          :     colChickenDblLight (0000024155DFB2A8)
+[LOG] SoundI::release                          :  (0000024154FCFB58)
+[LOG] SoundI::release                          :     colAsteroids (00000240612FF238)
+[LOG] SoundI::release                          :  (0000024154FCFCC8)
+[LOG] SoundI::release                          :     meteorLight (00000241551B2868)
+[LOG] SoundI::release                          :  (0000024154FCF598)
+[LOG] SoundI::release                          :     meteorDark (00000240610F8078)
+[LOG] SoundI::release                          :  (0000024154FCFE38)
+[LOG] SoundI::release                          :     ChickenLight (000002412AFE5068)
+[LOG] SoundI::release                          :  (0000024154FD3EE8)
+[LOG] SoundI::release                          :     chickenDark (000002412AFE4EC8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] ProfileClient::markForDead               : Closing client connection
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] FMOD_OS_Net_Read                         : Interrupted.[LOG] ProfileClient::recvThreadLoopFunction    : Socket disconnected
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[ERR] OutputWASAPI::mixerThread                : GetCurrentPadding returned 0x88890004.  Device was unplugged!
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
+[ERR] OutputWASAPI::init                       : IAudioClient::Initialize returned 0x8889000A.
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD NoSound Output'
+[LOG] OutputNoSound::init                      : Initializing.
+[LOG] OutputNoSound::init                      : Done.
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 7, Looping: Yes.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
