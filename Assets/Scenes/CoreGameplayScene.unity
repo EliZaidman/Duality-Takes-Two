@@ -4851,22 +4851,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2066016012661925684, guid: e601ed11c355a194e82e11f61b09ec25, type: 3}
-      propertyPath: SfxList.Array.data[0].sfxName
-      value: Satelite(Clone)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2066016012661925684, guid: e601ed11c355a194e82e11f61b09ec25, type: 3}
-      propertyPath: SfxList.Array.data[1].sfxName
-      value: colSatelite(Clone)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2066016012661925684, guid: e601ed11c355a194e82e11f61b09ec25, type: 3}
-      propertyPath: SfxList.Array.data[2].sfxName
-      value: BigAstroids(Clone)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2066016012661925684, guid: e601ed11c355a194e82e11f61b09ec25, type: 3}
-      propertyPath: SfxList.Array.data[3].sfxName
-      value: colBigAstroids(Clone)
-      objectReference: {fileID: 0}
     - target: {fileID: 2066016012661925685, guid: e601ed11c355a194e82e11f61b09ec25, type: 3}
       propertyPath: m_Name
       value: AudioManager

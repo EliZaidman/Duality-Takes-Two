@@ -49,7 +49,7 @@ public class SpaceObject : MonoBehaviour
         StateProperties state = SetObjState(lightCheck.lightConditions);
         hitProperties.ModularParamsInit(state.doHitPlayer, state.colState);
         if (objStateSfx != null)
-        AudioManager.PlayOneShot(objStateSfx.path, AudioManager.LIGHT_DARK_PARAM_NAME, state.stateFmodParamValue, transform.position);
+        AudioManager.instance.PlayOneShot(objStateSfx.path, AudioManager.LIGHT_DARK_PARAM_NAME, state.stateFmodParamValue, transform.position);
    
     }
     private StateProperties SetObjState(LightCheck.LightConditions lightCondition)
