@@ -15,6 +15,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private int bgmIntensityRate;
     private EventDescription bgmDescription;
     PLAYBACK_STATE playbackState;
+    [SerializeField] private float OneShotTimer;
+    private bool releaseIsOn;
+
 
     public static AudioManager instance;
     private void Awake()
@@ -44,19 +47,34 @@ public class AudioManager : MonoBehaviour
     {
         SetIntensity();
     }
-    public static void PlayOneShot(string path, string parameterName, float parameterValue, Vector3 position = new Vector3())
+    public void ReleaseOneShot(EventInstance instance)
+    {
+        if(PlaybackState(instance) != PLAYBACK_STATE.PLAYING && !releaseIsOn)
+        {
+            instance.release();
+            releaseIsOn = true;
+        }
+    }
+    public EventInstance PlayOneShot(string path, string parameterName, float parameterValue, Vector3 position = new Vector3())
     {
         var instance = RuntimeManager.CreateInstance(path);
         instance.set3DAttributes(RuntimeUtils.To3DAttributes(position));
         instance.setParameterByName(parameterName, parameterValue);
         instance.start();
-        instance.release();
-    }    public void PlayOneShotByName(string sfxName)
+        return instance;
+    }    
+    public void PlayOneShotByName(string sfxName)
     {
         var sfxToPlay = SfxList.Find(name => name.sfxName == sfxName);
         RuntimeManager.PlayOneShot(sfxToPlay.path);
     }
-
+    public IEnumerator ReleaseOneShotSource(EventInstance evInstance)
+    {
+        releaseIsOn = true;
+        yield return new WaitForSeconds(10);
+        if (PlaybackState(evInstance) != PLAYBACK_STATE.PLAYING)
+        ReleaseOneShot(evInstance);
+    }
     public void PlayBGM()
     {
         if (PlaybackState(bgmEvent) == PLAYBACK_STATE.PLAYING)
