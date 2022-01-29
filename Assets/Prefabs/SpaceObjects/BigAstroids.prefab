@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f9e15835825c594c8a721051d71946b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enumvalue: 0
   lightCheck: {fileID: 3857335633980886836}
   objStateSfx:
     sfxName: 
@@ -66,31 +67,26 @@ MonoBehaviour:
     lightCondition: 0
     doHitPlayer: 0
     colState: 0
-    stateFmodParamValue: 0
   - stateName: darkness
     obj: {fileID: 8863610989997837301}
     lightCondition: 3
     doHitPlayer: 0
     colState: 0
-    stateFmodParamValue: 1
   - stateName: light
     obj: {fileID: 1548823136139486483}
     lightCondition: 1
     doHitPlayer: 0
     colState: 0
-    stateFmodParamValue: 1
   - stateName: doubleLight
     obj: {fileID: 6012793005420283676}
     lightCondition: 2
     doHitPlayer: 0
     colState: 0
-    stateFmodParamValue: 1
   - stateName: DoubleDarkness
     obj: {fileID: 8753284326452337991}
     lightCondition: 4
     doHitPlayer: 0
     colState: 0
-    stateFmodParamValue: 1
   OnBreak:
     m_PersistentCalls:
       m_Calls: []
@@ -182,7 +178,7 @@ PrefabInstance:
     - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bd954dae80d21044cbf4e67789a428b1, type: 2}
+      objectReference: {fileID: 2100000, guid: 0d590b9d1e8a95a4e8adf90d8771cb21, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: DoubleLightnedMeteor
@@ -257,7 +253,7 @@ PrefabInstance:
     - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bd954dae80d21044cbf4e67789a428b1, type: 2}
+      objectReference: {fileID: 2100000, guid: 0d590b9d1e8a95a4e8adf90d8771cb21, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: ShadowMeteor (1)
@@ -332,7 +328,7 @@ PrefabInstance:
     - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bd954dae80d21044cbf4e67789a428b1, type: 2}
+      objectReference: {fileID: 2100000, guid: 0d590b9d1e8a95a4e8adf90d8771cb21, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: DoubleShadowMeteor
@@ -407,7 +403,7 @@ PrefabInstance:
     - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bd954dae80d21044cbf4e67789a428b1, type: 2}
+      objectReference: {fileID: 2100000, guid: 0d590b9d1e8a95a4e8adf90d8771cb21, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: DefaultMeteor
@@ -482,7 +478,7 @@ PrefabInstance:
     - target: {fileID: 5199803470779040236, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bd954dae80d21044cbf4e67789a428b1, type: 2}
+      objectReference: {fileID: 2100000, guid: 0d590b9d1e8a95a4e8adf90d8771cb21, type: 2}
     - target: {fileID: 5992485451713175609, guid: f7184c1e48476924bb57db880634b754, type: 3}
       propertyPath: m_Name
       value: LightnedMeteor
