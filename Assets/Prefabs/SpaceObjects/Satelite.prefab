@@ -62,9 +62,9 @@ MonoBehaviour:
     sfxID: 0
     path: 
   stateProperties:
-  - stateName: light
+  - stateName: darkness
     obj: {fileID: 1142188573863296268}
-    lightCondition: 1
+    lightCondition: 3
     doHitPlayer: 0
     colState: 0
     stateFmodParamValue: 1

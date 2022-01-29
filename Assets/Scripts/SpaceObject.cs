@@ -34,36 +34,15 @@ public class SpaceObject : MonoBehaviour
     {
         hitProperties.Init(gameObject.name, true, SpaceObjHitProperties.CollisionState.Hit);
         objStateSfx = AudioManager.instance.SfxList.Find(name => name.sfxName == gameObject.name);
-        
+        collisionSfx = AudioManager.instance.SfxList.Find(name => name.sfxName == "col"+gameObject.name);
     }
 
     public void LightCheckTrigger()
     {
         StateProperties state = SetObjState(lightCheck.lightConditions);
-        
+        if (objStateSfx != null)
         AudioManager.PlayOneShot(objStateSfx.path, AudioManager.LIGHT_DARK_PARAM_NAME, state.stateFmodParamValue, transform.position);
-
-        switch (lightCheck.lightConditions)
-        {
-            case LightCheck.LightConditions.darkness:
-                if(objStateSfx != null)
-                AudioManager.PlayOneShot(objStateSfx.path, "LightDark", 2, transform.position);
-                break;
-            case LightCheck.LightConditions.DoubleDarkness:
-
-                break;
-            case LightCheck.LightConditions.doubleLight:
-
-                break;
-            case LightCheck.LightConditions.light:
-
-                if (objStateSfx != null)
-                    AudioManager.PlayOneShot(objStateSfx.path, "LightDark", 1, transform.position);
-                break;
-            case LightCheck.LightConditions.Default:
-
-                break;
-        }
+   
     }
     private StateProperties SetObjState(LightCheck.LightConditions lightCondition)
     {
