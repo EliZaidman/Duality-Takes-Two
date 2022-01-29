@@ -61,7 +61,7 @@ MonoBehaviour:
   - stateName: Default
     obj: {fileID: 1142188573863296268}
     lightCondition: 0
-    doHitPlayer: 0
+    doHitPlayer: 1
     colState: 0
   - stateName: light
     obj: {fileID: 640257684724760528}
@@ -71,12 +71,12 @@ MonoBehaviour:
   - stateName: doubleLight
     obj: {fileID: 7868561154666500719}
     lightCondition: 2
-    doHitPlayer: 0
+    doHitPlayer: 1
     colState: 0
   - stateName: darkness
     obj: {fileID: 997785135023623845}
     lightCondition: 3
-    doHitPlayer: 0
+    doHitPlayer: 1
     colState: 0
   - stateName: DoubleDarkness
     obj: {fileID: 101603784325678454}
