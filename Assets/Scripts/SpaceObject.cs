@@ -33,7 +33,7 @@ public class SpaceObject : MonoBehaviour
     private void Awake()
     {
         hitProperties.Init(gameObject.name, true, SpaceObjHitProperties.CollisionState.Hit);
-        objStateSfx = AudioManager.instance.SfxList.Find(name => name.sfxName == gameObject.name); 
+        objStateSfx = AudioManager.instance.SfxList.Find(name => name.sfxName == gameObject.name);
         
     }
 

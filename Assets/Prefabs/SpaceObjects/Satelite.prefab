@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 3045235186685767391}
   - component: {fileID: 4561736330514345651}
   - component: {fileID: 3810298876116692040}
-  - component: {fileID: 2222818707230896962}
-  - component: {fileID: 5960450870936532415}
   m_Layer: 6
   m_Name: Satelite
   m_TagString: Obsticle
@@ -55,10 +53,21 @@ MonoBehaviour:
   doubleLightObj: {fileID: 1142188573863296268}
   defaultGameObj: {fileID: 640257684724760528}
   lightCheck: {fileID: 3045235186685767391}
+  objStateSfx:
+    sfxName: 
+    sfxID: 0
+    path: 
   collisionSfx:
     sfxName: 
     sfxID: 0
     path: 
+  stateProperties:
+  - stateName: light
+    obj: {fileID: 1142188573863296268}
+    lightCondition: 1
+    doHitPlayer: 0
+    colState: 0
+    stateFmodParamValue: 1
 --- !u!114 &3045235186685767391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,33 +133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   _lightCheck: {fileID: 0}
---- !u!65 &2222818707230896962
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2144927695240258381}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.3986917, y: 0.5052623, z: 0.42011943}
-  m_Center: {x: -0.0020477185, y: -0.07205501, z: -0.008731738}
---- !u!136 &5960450870936532415
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2144927695240258381}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.4263813
-  m_Height: 2.6896482
-  m_Direction: 1
-  m_Center: {x: 0.000000029412721, y: 0.21187164, z: -0.0024059415}
 --- !u!1 &7530399518661262500
 GameObject:
   m_ObjectHideFlags: 0
