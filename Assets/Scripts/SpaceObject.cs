@@ -11,8 +11,8 @@ public class SpaceObjHitProperties
 }
 public class SpaceObject : MonoBehaviour
 {
-  
 
+    public int Enumvalue = 0;
     [SerializeField] 
     public LightCheck lightCheck;
     public SFXClass objStateSfx;
@@ -34,7 +34,6 @@ public class SpaceObject : MonoBehaviour
         {
            if(found!=null)
             found.stateName = found.lightCondition.ToString();
-
         }
     }
     private void Awake()
@@ -46,11 +45,34 @@ public class SpaceObject : MonoBehaviour
     
     public void LightCheckTrigger()
     {
+        
         StateProperties state = SetObjState(lightCheck.lightConditions);
         hitProperties.ModularParamsInit(state.doHitPlayer, state.colState);
+        
+        switch (lightCheck.lightConditions)
+        {
+            case LightCheck.LightConditions.Default:
+                break;
+            case LightCheck.LightConditions.light:
+                Enumvalue = 0;
+                break;
+            case LightCheck.LightConditions.doubleLight:
+                Enumvalue = 1;
+                break;
+            case LightCheck.LightConditions.darkness:
+                Enumvalue = 2;
+                break;
+            case LightCheck.LightConditions.DoubleDarkness:
+                Enumvalue = 3;
+                break;
+            default:
+                break;
+        }
+
+
+        //AUTO FILL OF FMOD LIGHT/DARK PARAMETER VIA LIGHT HIT, FOR NOW ITS DEFAULT FOR PLACEHOLDER.
         if (objStateSfx != null)
-        AudioManager.instance.PlayOneShot(objStateSfx.path, AudioManager.LIGHT_DARK_PARAM_NAME, state.stateFmodParamValue, transform.position);
-   
+        AudioManager.instance.PlayOneShot(objStateSfx.path, AudioManager.LIGHT_DARK_LIGHTER_DARKER_PARAM_NAME, Enumvalue , transform.position);
     }
     private StateProperties SetObjState(LightCheck.LightConditions lightCondition)
     {
@@ -103,9 +125,7 @@ public class SpaceObject : MonoBehaviour
         public bool doHitPlayer;
         [Space]
         public SpaceObjHitProperties.CollisionState colState;
-
-        public int stateFmodParamValue;
-        
+        float stateFmodParamValue;        
 
     }
   

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{e4521dc8-0f07-4681-911d-203b398792c3}">
+		<property name="assetPath">
+			<value>colSatelite.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.523310657596372</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3095a65f-4039-444d-a669-03e213ad0964}</destination>
+		</relationship>
+	</object>
+</objects>

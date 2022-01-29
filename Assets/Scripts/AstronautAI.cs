@@ -32,6 +32,8 @@ public class AstronautAI : MonoBehaviour
         switch (spaceObject.hitProperties.colState)
         {
             case SpaceObject.SpaceObjHitProperties.CollisionState.Hit:
+                var sfx = spaceObject.collisionSfx;
+                AudioManager.instance.PlayOneShot(sfx.path, AudioManager.LIGHT_DARK_LIGHTER_DARKER_PARAM_NAME, spaceObject.Enumvalue);
                 OnDeath.Invoke();
                 break;
             case SpaceObject.SpaceObjHitProperties.CollisionState.Break:
