@@ -44,16 +44,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SfxList:
-  - sfxName: Satallite
+  - sfxName: Satelite(Clone)
     sfxID: 0
     path: event:/sfx/satallite
-  - sfxName: colSatallite
+  - sfxName: colSatelite(Clone)
     sfxID: 0
     path: event:/sfx/colSatallite
-  - sfxName: Meteor
+  - sfxName: BigAstroids(Clone)
     sfxID: 0
     path: event:/sfx/meteor
-  - sfxName: colMeteor
+  - sfxName: colBigAstroids(Clone)
     sfxID: 0
     path: event:/sfx/colMeteor
   - sfxName: colMeteor
